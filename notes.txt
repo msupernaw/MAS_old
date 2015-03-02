@@ -1,4 +1,23 @@
 
-Areas are defined as polygons? This may be useful for movement in complex
+Software flow:
+-Configure the Information object
+  - Read data into the Observation object
+  - Create Locations and add subpopulations
+  - Initialize all Subpopulation objects
+        - Add a pointer to the Observation object
+        - Define submodels(growth, recruitment, immigration, emigration, etc)
+        - Initialize all vectors and matrices
+  - Add Location objects to the Model object
+  - Begin fit procedure (concurrently if using ATL)
+  - Write population analysis results
+  - Characterize uncertainty and write 
+  - Do model projection
+  - Evaluate management strategy
+
+
+
+
+Location class:
+-Areas are defined as polygons? This may be useful for movement in complex
 areas. Perhaps future ancestors of the location class may contain hard boundaries
 where fish cannot cross, like in reef structures. 
