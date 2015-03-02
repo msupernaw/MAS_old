@@ -34,6 +34,7 @@
       </logicalFolder>
       <itemPath>source/Information.hpp</itemPath>
       <itemPath>source/Location.hpp</itemPath>
+      <itemPath>source/MAS.hpp</itemPath>
       <itemPath>source/Model.hpp</itemPath>
       <itemPath>source/Object.hpp</itemPath>
       <itemPath>source/Observation.hpp</itemPath>
@@ -56,7 +57,6 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>source/MAS.hpp</itemPath>
     <itemPath>mas.tpl</itemPath>
   </logicalFolder>
   <sourceRootList>
@@ -71,6 +71,9 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <commandLine>-fpermissive</commandLine>
+        </ccTool>
       </compileType>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
