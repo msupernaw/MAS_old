@@ -133,10 +133,6 @@ namespace mas {
             this->time_max = time_max;
         }
 
-
-
-
-
     };
 
 }
