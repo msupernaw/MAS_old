@@ -42,8 +42,96 @@ namespace mas {
         std::vector<EVAL_T> Y; // yield{age x time}
         std::vector<EVAL_T> O; // emigration{age x time}
         Observation<REAL_T>* observations;
-        
+
     public:
+
+        const std::vector<EVAL_T>& GetBiomass() const {
+            return B;
+        }
+
+        void SetBiomass(std::vector<EVAL_T> B) {
+            this->B = B;
+        }
+
+        const std::vector<EVAL_T>& GetDeaths() const {
+            return D;
+        }
+
+        void SetDeaths(std::vector<EVAL_T> D) {
+            this->D = D;
+        }
+
+        const std::vector<EVAL_T>& GetGrowth() const {
+            return G;
+        }
+
+        void SetGrowth(std::vector<EVAL_T> G) {
+            this->G = G;
+        }
+
+        const std::vector<EVAL_T>& GetImmigration() const {
+            return I;
+        }
+
+        void SetImmigration(std::vector<EVAL_T> I) {
+            this->I = I;
+        }
+
+        const std::vector<EVAL_T>& GetEmigration() const {
+            return O;
+        }
+
+        void SetEmigration(std::vector<EVAL_T> O) {
+            this->O = O;
+        }
+
+        const std::vector<EVAL_T>& GetRecruitment() const {
+            return R;
+        }
+
+        void SetRecruitment(std::vector<EVAL_T> R) {
+            this->R = R;
+        }
+
+        const std::vector<EVAL_T>& GetYield() const {
+            return Y;
+        }
+
+        void SetYield(std::vector<EVAL_T> Y) {
+            this->Y = Y;
+        }
+
+        uint32_t GetAgeMax() const {
+            return age_max;
+        }
+
+        void SetAgeMax(uint32_t age_max) {
+            this->age_max = age_max;
+        }
+
+        uint32_t GetGenders() const {
+            return genders;
+        }
+
+        void SetGenders(uint32_t genders) {
+            this->genders = genders;
+        }
+
+        Observation<REAL_T>* GetObservations() const {
+            return observations;
+        }
+
+        void SetObservations(Observation<REAL_T>* observations) {
+            this->observations = observations;
+        }
+
+        uint32_t GetTimeMax() const {
+            return time_max;
+        }
+
+        void SetTimeMax(uint32_t time_max) {
+            this->time_max = time_max;
+        }
 
 
 
