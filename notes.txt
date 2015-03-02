@@ -10,7 +10,7 @@ Software flow:
             -Register estimable parameters to the Information object
         - Initialize all dependent variable vectors and matrices
   - Add Location objects to the Model object
-  - Begin fit procedure (concurrently if using ATL)
+  - Begin fit procedure (concurrently if possible)
   - Write population analysis results
   - Characterize uncertainty and write 
   - Do model projection
