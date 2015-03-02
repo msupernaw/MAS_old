@@ -22,9 +22,16 @@ namespace mas {
 
         StructureType structure_type;
 
-        Structure() : structure_type(AGE) {
+        /**
+         * Default constructor.
+         * 
+         * The default structure type is age.
+         */
+        Structure(StructureType type = AGE) : structure_type(type) {
 
         }
+        
+  
 
         operator StructureType() {
             return this->structure_type;

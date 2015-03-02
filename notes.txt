@@ -1,0 +1,4 @@
+
+Areas are defined as polygons? This may be useful for movement in complex
+areas. Perhaps future ancestors of the location class may contain hard boundaries
+where fish cannot cross, like in reef structures. 

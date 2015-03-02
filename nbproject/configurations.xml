@@ -40,6 +40,7 @@
       <itemPath>source/Observation.hpp</itemPath>
       <itemPath>source/Structure.hpp</itemPath>
       <itemPath>source/Subpopulation.hpp</itemPath>
+      <itemPath>notes.txt</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -78,6 +79,8 @@
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mas.tpl" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="notes.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/Information.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -163,6 +166,8 @@
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mas.tpl" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="notes.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/Information.hpp" ex="false" tool="3" flavor2="0">
       </item>
