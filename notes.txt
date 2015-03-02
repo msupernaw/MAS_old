@@ -6,7 +6,7 @@ Software flow:
   - Initialize all Subpopulation objects
         - Add a pointer to the Observation object
         - Define submodels(growth, recruitment, immigration, emigration, etc) from CSTAR
-        - Initialize all independent variables(including those in vector, or matrices)
+        - Initialize all independent variables(including those in vector, or matrix containers)
             -Register estimable parameters to the Information object
         - Initialize all dependent variable vectors and matrices
   - Add Location objects to the Model object
