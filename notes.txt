@@ -2,10 +2,10 @@
 Software flow:
 -Configure the Information object
   - Read data into the Observation object
-  - Create Locations and add subpopulations
+  - Create Location objects and add Subpopulation objects
   - Initialize all Subpopulation objects
         - Add a pointer to the Observation object
-        - Define submodels(growth, recruitment, immigration, emigration, etc)
+        - Define submodels(growth, recruitment, immigration, emigration, etc) from CSTAR
         - Initialize all vectors and matrices
   - Add Location objects to the Model object
   - Begin fit procedure (concurrently if using ATL)
@@ -13,6 +13,7 @@ Software flow:
   - Characterize uncertainty and write 
   - Do model projection
   - Evaluate management strategy
+  - Generate pdf report
 
 
 
