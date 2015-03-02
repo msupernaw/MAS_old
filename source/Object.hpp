@@ -15,6 +15,10 @@ namespace mas {
     class Object {
     public:
 
+        virtual void Initialize(Information* info){
+            
+        }
+        
         virtual std::string ToString() {
             return "";
         }
