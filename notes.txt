@@ -1,4 +1,6 @@
 
+
+
 Software flow:
 -Configure the Information object from JSON or XML
   - Read data into the Observation object
@@ -17,6 +19,10 @@ Software flow:
   - Evaluate management strategy
   - Generate pdf report
 
+*The Information class should be considered the class that binds
+all components of the MAS runtime. Relevant information will be
+written to and held in the Information class. It will be used for report 
+generation. 
 
 General Goal of Development:
 Write generic portable code for MAS components and keep them separate from any 
