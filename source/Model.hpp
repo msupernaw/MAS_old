@@ -15,7 +15,6 @@
 
 namespace mas{
     
-    
     template<typename REAL_T, typename EVAL_T = REAL_T>
     class Model: public Object{
         

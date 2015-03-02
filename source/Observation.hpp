@@ -20,6 +20,7 @@ namespace mas {
         uint32_t number_of_areas;
         uint32_t number_of_age_groups;
         uint32_t number_of_genders;
+        
     };
 
 

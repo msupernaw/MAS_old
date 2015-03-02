@@ -43,9 +43,7 @@ namespace mas {
     public:
 
         void AddPoint(const Point<REAL_T>& p) {
-
             points.push_back(p);
-
         }
 
         /**
