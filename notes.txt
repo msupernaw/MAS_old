@@ -1,12 +1,14 @@
 
 Software flow:
--Configure the Information object
+-Configure the Information object from JSON or XML
   - Read data into the Observation object
   - Create Location objects and add Subpopulation objects
   - Initialize all Subpopulation objects
         - Add a pointer to the Observation object
         - Define submodels(growth, recruitment, immigration, emigration, etc) from CSTAR
-        - Initialize all vectors and matrices
+        - Initialize all independent variables(including those in vector, or matrices)
+            -Register estimable parameters to the Information object
+        - Initialize all dependent variable vectors and matrices
   - Add Location objects to the Model object
   - Begin fit procedure (concurrently if using ATL)
   - Write population analysis results
@@ -16,7 +18,13 @@ Software flow:
   - Generate pdf report
 
 
+General Goal of Development:
+Write generic portable code for MAS components and keep them separate from any 
+minimizer libraries such as ADMB and ATL. This will help ensure maintainability
+and allow for efficient upgrades if necessary. 
 
+
+Objects:
 
 Location class:
 -Areas are defined as polygons? This may be useful for movement in complex
