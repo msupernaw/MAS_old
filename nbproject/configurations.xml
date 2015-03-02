@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="90">
+<configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="CSTAR" displayName="CSTAR" projectFiles="true">
       <itemPath>source/support/CSTAR/CSTAR.hpp</itemPath>
@@ -26,6 +26,20 @@
                    displayName="Resource Files"
                    projectFiles="true">
     </logicalFolder>
+    <logicalFolder name="source" displayName="source" projectFiles="true">
+      <logicalFolder name="support" displayName="support" projectFiles="true">
+        <logicalFolder name="CSTAR" displayName="CSTAR" projectFiles="true">
+        </logicalFolder>
+        <itemPath>source/support/CSTAR-master.zip</itemPath>
+      </logicalFolder>
+      <itemPath>source/Information.hpp</itemPath>
+      <itemPath>source/Location.hpp</itemPath>
+      <itemPath>source/Model.hpp</itemPath>
+      <itemPath>source/Object.hpp</itemPath>
+      <itemPath>source/Observation.hpp</itemPath>
+      <itemPath>source/Structure.hpp</itemPath>
+      <itemPath>source/Subpopulation.hpp</itemPath>
+    </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
@@ -46,7 +60,7 @@
     <itemPath>mas.tpl</itemPath>
   </logicalFolder>
   <sourceRootList>
-    <Elem>source/support/CSTAR</Elem>
+    <Elem>source</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -62,7 +76,23 @@
       </item>
       <item path="mas.tpl" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="source/Information.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Location.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="source/MAS.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Model.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Object.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Observation.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Structure.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Subpopulation.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/support/CSTAR-master.zip" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/support/CSTAR/CSTAR.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -131,7 +161,23 @@
       </item>
       <item path="mas.tpl" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="source/Information.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Location.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="source/MAS.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Model.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Object.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Observation.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Structure.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Subpopulation.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/support/CSTAR-master.zip" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/support/CSTAR/CSTAR.hpp" ex="false" tool="3" flavor2="0">
       </item>

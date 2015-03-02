@@ -14,23 +14,7 @@
 #include "support/CSTAR/Population.hpp"
 
 
-namespace mas{
-     
-    
-    template<class T>
-    class  MASModel{
-        std::vector<cstar::population::PopulationBase<T> > sub_populations;
-        cstar::movement::MovementBase<T>* movement_model;
-        
-        public:
-            
-            
-        
-    };
-    
-    
-    
-}
+
 
 
 

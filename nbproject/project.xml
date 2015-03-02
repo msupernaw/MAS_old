@@ -10,7 +10,7 @@
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList>
-                <sourceRootElem>source/support/CSTAR</sourceRootElem>
+                <sourceRootElem>source</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
