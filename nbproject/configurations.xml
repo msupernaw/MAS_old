@@ -35,6 +35,7 @@
       <itemPath>source/Information.hpp</itemPath>
       <itemPath>source/Location.hpp</itemPath>
       <itemPath>source/MAS.hpp</itemPath>
+      <itemPath>source/MathUtilites.hpp</itemPath>
       <itemPath>source/Model.hpp</itemPath>
       <itemPath>source/Object.hpp</itemPath>
       <itemPath>source/Observation.hpp</itemPath>
@@ -87,6 +88,8 @@
       <item path="source/Location.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/MAS.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/MathUtilites.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/Model.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -174,6 +177,8 @@
       <item path="source/Location.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/MAS.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/MathUtilites.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="source/Model.hpp" ex="false" tool="3" flavor2="0">
       </item>

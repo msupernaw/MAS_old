@@ -21,10 +21,11 @@ Software flow:
 General Goal of Development:
 Write generic portable code for MAS components and keep them separate from any 
 minimizer libraries such as ADMB and ATL. This will help ensure maintainability
-and allow for efficient upgrades if necessary. 
+and allow for efficient upgrades if necessary. Try to use standard library 
+containers when possible.
 
 
-Objects:
+Notes about MAS objects:
 
 Location class:
 -Areas are defined as polygons? This may be useful for movement in complex
