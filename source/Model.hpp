@@ -16,7 +16,7 @@
 namespace mas{
     
     template<typename REAL_T, typename EVAL_T = REAL_T>
-    class Model: public Object{
+    class Model: public EvaluationObject<REAL_T,EVAL_T>{
         
         uint32_t space_max;//max space dimension
         uint32_t time_max;//max time dimension

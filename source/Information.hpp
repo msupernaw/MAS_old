@@ -8,6 +8,7 @@
 #ifndef INFORMATION_HPP
 #define	INFORMATION_HPP
 
+#include "Object.hpp"
 
 namespace mas {
 
@@ -16,11 +17,12 @@ namespace mas {
      * configuration. 
      */
     template<typename REAL_T, typename EVAL_T>
-    class Information {
+    class Information  {
         // hold a list of estimable parameters for the population analysis
         std::vector<std::pair<EVAL_T*, int> > estimable_parameters;
         
-        
+       
+
         public:
             
             /**

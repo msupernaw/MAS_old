@@ -30,7 +30,7 @@ namespace mas {
      *<br> 
      */
     template<typename REAL_T, typename EVAL_T = REAL_T>
-    class Subpopulation : public Object {
+    class Subpopulation : public EvaluationObject<REAL_T,EVAL_T> {
         uint32_t time_max; // max time dimension
         uint32_t age_max; // max age dimension
         uint32_t genders; // number of genders represented in this subpopulation

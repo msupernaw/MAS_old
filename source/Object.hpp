@@ -9,21 +9,45 @@
 #define	OBJECT_HPP
 
 #include <string>
+#include "Information.hpp"
 
 namespace mas {
 
+    
     class Object {
+   
     public:
 
-        virtual void Initialize(Information* info){
-            
+        
+        
+        virtual std::string ToString() const{
+            return "Function named \"ToString()\", Not yet implemented!";
         }
         
-        virtual std::string ToString() {
-            return "";
+  
+        friend std::ostream& operator<<(std::ostream& os, const Object& obj) {
+            os<<obj.ToString();
+            return os;
+        }
+    };
+    
+    
+    template<typename REAL_T, typename EVAL_T>
+    class EvaluationObject: public Object{
+    protected:
+        Information<REAL_T,EVAL_T>* info;
+        
+        Information<REAL_T, EVAL_T>* GetInfo() const {
+            return info;
+        }
+
+        void SetInfo(Information<REAL_T, EVAL_T>* info) {
+            this->info = info;
         }
 
     };
+    
+    
 }
 
 

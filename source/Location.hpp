@@ -119,7 +119,7 @@ namespace mas {
     };
 
     template<typename REAL_T, typename EVAL_T = REAL_T>
-    class Location : public Object {
+    class Location : public EvaluationObject<REAL_T,EVAL_T> {
         Polygon<REAL_T> area;
         std::vector<Polygon<REAL_T> > adjacent_areas;
         std::vector<Subpopulation< REAL_T, EVAL_T> > subpopulations;

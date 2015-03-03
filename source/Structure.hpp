@@ -8,10 +8,12 @@
 #ifndef STRUCTURE_HPP
 #define	STRUCTURE_HPP
 
+#include "Object.hpp"
+
 namespace mas {
 
     template<typename REAL_T, typename EVAL_T = REAL_T>
-    class Structure {
+    class Structure : public EvaluationObject<REAL_T, EVAL_T> {
     public:
 
         enum StructureType {
@@ -30,8 +32,6 @@ namespace mas {
         Structure(StructureType type = AGE) : structure_type(type) {
 
         }
-        
-  
 
         operator StructureType() {
             return this->structure_type;

@@ -16,7 +16,6 @@
       <itemPath>source/support/CSTAR/Selectivity.hpp</itemPath>
       <itemPath>source/support/CSTAR/Traits.hpp</itemPath>
       <itemPath>source/support/CSTAR/algorithm_description_template.txt</itemPath>
-      <itemPath>source/support/CSTAR/main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -59,6 +58,7 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>README.md</itemPath>
     <itemPath>mas.tpl</itemPath>
   </logicalFolder>
   <sourceRootList>
@@ -77,6 +77,8 @@
           <commandLine>-fpermissive</commandLine>
         </ccTool>
       </compileType>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mas.tpl" ex="false" tool="3" flavor2="0">
@@ -142,8 +144,6 @@
             ex="false"
             tool="3"
             flavor2="0">
-      </item>
-      <item path="source/support/CSTAR/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -166,6 +166,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="mas.tpl" ex="false" tool="3" flavor2="0">
@@ -231,8 +233,6 @@
             ex="false"
             tool="3"
             flavor2="0">
-      </item>
-      <item path="source/support/CSTAR/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
