@@ -4,34 +4,66 @@
 
 {\ttfamily \#include $<$Information.\+hpp$>$}
 
+
+
+Inherits \hyperlink{classmas_1_1_evaluation_object}{mas\+::\+Evaluation\+Object$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}.
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classmas_1_1_information_a94e2ca5cb7f84694c300a351243c3a3b}{Register\+Estimable} (E\+V\+A\+L\+\_\+\+T $\ast$parameter, int phase=0)
+\item 
+void \hyperlink{classmas_1_1_information_a4b8303a3b095a9185fd371a6db2f9412}{Load\+Model} (const std\+::string \&file)
+\item 
+std\+::string \hyperlink{classmas_1_1_information_a9dec6b9486d758b6c8c567f1c29ad59a}{To\+String} () const 
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-\subsubsection*{template$<$typename R\+E\+A\+L\+\_\+\+T, typename E\+V\+A\+L\+\_\+\+T$>$class mas\+::\+Information$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}
+\subsubsection*{template$<$typename R\+E\+A\+L\+\_\+\+T, typename E\+V\+A\+L\+\_\+\+T = R\+E\+A\+L\+\_\+\+T$>$class mas\+::\+Information$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}
 
 Class to hold information about a models configuration. 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmas_1_1_information_a4b8303a3b095a9185fd371a6db2f9412}{}\index{mas\+::\+Information@{mas\+::\+Information}!Load\+Model@{Load\+Model}}
+\index{Load\+Model@{Load\+Model}!mas\+::\+Information@{mas\+::\+Information}}
+\subsubsection[{Load\+Model}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T, typename E\+V\+A\+L\+\_\+\+T = R\+E\+A\+L\+\_\+\+T$>$ void {\bf mas\+::\+Information}$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$\+::Load\+Model (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classmas_1_1_information_a4b8303a3b095a9185fd371a6db2f9412}
+Load a model configuration file in J\+S\+O\+N format. 
+\begin{DoxyParams}{Parameters}
+{\em file} & \\
+\hline
+\end{DoxyParams}
 \hypertarget{classmas_1_1_information_a94e2ca5cb7f84694c300a351243c3a3b}{}\index{mas\+::\+Information@{mas\+::\+Information}!Register\+Estimable@{Register\+Estimable}}
 \index{Register\+Estimable@{Register\+Estimable}!mas\+::\+Information@{mas\+::\+Information}}
-\subsubsection[{Register\+Estimable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T, typename E\+V\+A\+L\+\_\+\+T$>$ void {\bf mas\+::\+Information}$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$\+::Register\+Estimable (
+\subsubsection[{Register\+Estimable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T, typename E\+V\+A\+L\+\_\+\+T = R\+E\+A\+L\+\_\+\+T$>$ void {\bf mas\+::\+Information}$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$\+::Register\+Estimable (
 \begin{DoxyParamCaption}
 \item[{E\+V\+A\+L\+\_\+\+T $\ast$}]{parameter, }
 \item[{int}]{phase = {\ttfamily 0}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classmas_1_1_information_a94e2ca5cb7f84694c300a351243c3a3b}
-Register a model as estimable. Simply adds a pointer to the parameter to a list along with its phase. First phase is 0. 
+Register a parameter as estimable. Simply adds a pointer to the parameter to a list along with its phase of optimization. First phase is 0. 
 \begin{DoxyParams}{Parameters}
 {\em parameter} & \\
 \hline
 {\em phase} & \\
 \hline
 \end{DoxyParams}
+\hypertarget{classmas_1_1_information_a9dec6b9486d758b6c8c567f1c29ad59a}{}\index{mas\+::\+Information@{mas\+::\+Information}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!mas\+::\+Information@{mas\+::\+Information}}
+\subsubsection[{To\+String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T, typename E\+V\+A\+L\+\_\+\+T = R\+E\+A\+L\+\_\+\+T$>$ std\+::string {\bf mas\+::\+Information}$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$\+::To\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classmas_1_1_information_a9dec6b9486d758b6c8c567f1c29ad59a}
+
+
+Reimplemented from \hyperlink{classmas_1_1_object_af94e7d17ee027b003f1ae6c30e8a410f}{mas\+::\+Object}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -1,7 +1,7 @@
 {
     "name": "red_snapper_assesment",
     "data": {
-        "type": "catch_at_age",
+        "structure": "age",
         "years": "10" ,
         "ages": "9",
         "genders": "1",

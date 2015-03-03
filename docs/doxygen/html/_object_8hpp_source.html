@@ -99,64 +99,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define OBJECT_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_information_8hpp.html">Information.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemas.html">mas</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classmas_1_1_object.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmas_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classmas_1_1_object.html#af94e7d17ee027b003f1ae6c30e8a410f">   23</a></span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="classmas_1_1_object.html#af94e7d17ee027b003f1ae6c30e8a410f">ToString</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;Function named \&quot;ToString()\&quot;, Not yet implemented!&quot;</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> REAL_T, <span class="keyword">typename</span> EVAL_T&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">class </span>Information;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classmas_1_1_object.html">   22</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmas_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmas_1_1_object.html#ae18246100173c7798abeac960fa2c439">   28</a></span>&#160;        <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classmas_1_1_object.html#ae18246100173c7798abeac960fa2c439">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classmas_1_1_object.html">Object</a>&amp; obj) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            os&lt;&lt;obj.<a class="code" href="classmas_1_1_object.html#af94e7d17ee027b003f1ae6c30e8a410f">ToString</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">return</span> os;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> REAL_T, <span class="keyword">typename</span> EVAL_T&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmas_1_1_evaluation_object.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmas_1_1_evaluation_object.html">EvaluationObject</a>: <span class="keyword">public</span> <a class="code" href="classmas_1_1_object.html">Object</a>{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">   38</a></span>&#160;        <a class="code" href="classmas_1_1_information.html">Information&lt;REAL_T,EVAL_T&gt;</a>* <a class="code" href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">info</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmas_1_1_evaluation_object.html#af50a7cf1f746956e996acbd7dec5f43b">   40</a></span>&#160;        <a class="code" href="classmas_1_1_information.html">Information&lt;REAL_T, EVAL_T&gt;</a>* <a class="code" href="classmas_1_1_evaluation_object.html#af50a7cf1f746956e996acbd7dec5f43b">GetInfo</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">info</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmas_1_1_evaluation_object.html#a4da11c844c820787d892cc83b50d9b88">   44</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmas_1_1_evaluation_object.html#a4da11c844c820787d892cc83b50d9b88">SetInfo</a>(<a class="code" href="classmas_1_1_information.html">Information&lt;REAL_T, EVAL_T&gt;</a>* info) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            this-&gt;info = <a class="code" href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">info</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmas_1_1_object.html#af94e7d17ee027b003f1ae6c30e8a410f">   28</a></span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="classmas_1_1_object.html#af94e7d17ee027b003f1ae6c30e8a410f">ToString</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;Function named \&quot;ToString()\&quot;, Not yet implemented!&quot;</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classmas_1_1_object.html#ae18246100173c7798abeac960fa2c439">   33</a></span>&#160;        <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classmas_1_1_object.html#ae18246100173c7798abeac960fa2c439">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classmas_1_1_object.html">Object</a>&amp; obj) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            os&lt;&lt;obj.<a class="code" href="classmas_1_1_object.html#af94e7d17ee027b003f1ae6c30e8a410f">ToString</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> REAL_T, <span class="keyword">typename</span> EVAL_T&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmas_1_1_evaluation_object.html">   45</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmas_1_1_evaluation_object.html">EvaluationObject</a>: <span class="keyword">public</span> <a class="code" href="classmas_1_1_object.html">Object</a>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">   47</a></span>&#160;        <a class="code" href="classmas_1_1_information.html">Information&lt;REAL_T,EVAL_T&gt;</a>* <a class="code" href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">info</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmas_1_1_evaluation_object.html#af50a7cf1f746956e996acbd7dec5f43b">   49</a></span>&#160;        <a class="code" href="classmas_1_1_information.html">Information&lt;REAL_T, EVAL_T&gt;</a>* <a class="code" href="classmas_1_1_evaluation_object.html#af50a7cf1f746956e996acbd7dec5f43b">GetInfo</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">info</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* OBJECT_HPP */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="ttc" id="classmas_1_1_evaluation_object_html_af50a7cf1f746956e996acbd7dec5f43b"><div class="ttname"><a href="classmas_1_1_evaluation_object.html#af50a7cf1f746956e996acbd7dec5f43b">mas::EvaluationObject::GetInfo</a></div><div class="ttdeci">Information&lt; REAL_T, EVAL_T &gt; * GetInfo() const </div><div class="ttdef"><b>Definition:</b> Object.hpp:40</div></div>
-<div class="ttc" id="classmas_1_1_evaluation_object_html_a4da11c844c820787d892cc83b50d9b88"><div class="ttname"><a href="classmas_1_1_evaluation_object.html#a4da11c844c820787d892cc83b50d9b88">mas::EvaluationObject::SetInfo</a></div><div class="ttdeci">void SetInfo(Information&lt; REAL_T, EVAL_T &gt; *info)</div><div class="ttdef"><b>Definition:</b> Object.hpp:44</div></div>
-<div class="ttc" id="namespacemas_html"><div class="ttname"><a href="namespacemas.html">mas</a></div><div class="ttdef"><b>Definition:</b> Information.hpp:13</div></div>
-<div class="ttc" id="classmas_1_1_information_html"><div class="ttname"><a href="classmas_1_1_information.html">mas::Information</a></div><div class="ttdef"><b>Definition:</b> Information.hpp:20</div></div>
-<div class="ttc" id="classmas_1_1_evaluation_object_html_a5029ee28e34a1496c3c46dc82c5d8b8d"><div class="ttname"><a href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">mas::EvaluationObject::info</a></div><div class="ttdeci">Information&lt; REAL_T, EVAL_T &gt; * info</div><div class="ttdef"><b>Definition:</b> Object.hpp:38</div></div>
-<div class="ttc" id="classmas_1_1_object_html"><div class="ttname"><a href="classmas_1_1_object.html">mas::Object</a></div><div class="ttdef"><b>Definition:</b> Object.hpp:17</div></div>
-<div class="ttc" id="_information_8hpp_html"><div class="ttname"><a href="_information_8hpp.html">Information.hpp</a></div></div>
-<div class="ttc" id="classmas_1_1_object_html_af94e7d17ee027b003f1ae6c30e8a410f"><div class="ttname"><a href="classmas_1_1_object.html#af94e7d17ee027b003f1ae6c30e8a410f">mas::Object::ToString</a></div><div class="ttdeci">virtual std::string ToString() const </div><div class="ttdef"><b>Definition:</b> Object.hpp:23</div></div>
-<div class="ttc" id="classmas_1_1_evaluation_object_html"><div class="ttname"><a href="classmas_1_1_evaluation_object.html">mas::EvaluationObject</a></div><div class="ttdef"><b>Definition:</b> Object.hpp:36</div></div>
-<div class="ttc" id="classmas_1_1_object_html_ae18246100173c7798abeac960fa2c439"><div class="ttname"><a href="classmas_1_1_object.html#ae18246100173c7798abeac960fa2c439">mas::Object::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Object &amp;obj)</div><div class="ttdef"><b>Definition:</b> Object.hpp:28</div></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classmas_1_1_evaluation_object.html#a4da11c844c820787d892cc83b50d9b88">   53</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmas_1_1_evaluation_object.html#a4da11c844c820787d892cc83b50d9b88">SetInfo</a>(<a class="code" href="classmas_1_1_information.html">Information&lt;REAL_T, EVAL_T&gt;</a>* info) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            this-&gt;info = <a class="code" href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">info</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* OBJECT_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="ttc" id="classmas_1_1_evaluation_object_html_af50a7cf1f746956e996acbd7dec5f43b"><div class="ttname"><a href="classmas_1_1_evaluation_object.html#af50a7cf1f746956e996acbd7dec5f43b">mas::EvaluationObject::GetInfo</a></div><div class="ttdeci">Information&lt; REAL_T, EVAL_T &gt; * GetInfo() const </div><div class="ttdef"><b>Definition:</b> Object.hpp:49</div></div>
+<div class="ttc" id="classmas_1_1_evaluation_object_html_a4da11c844c820787d892cc83b50d9b88"><div class="ttname"><a href="classmas_1_1_evaluation_object.html#a4da11c844c820787d892cc83b50d9b88">mas::EvaluationObject::SetInfo</a></div><div class="ttdeci">void SetInfo(Information&lt; REAL_T, EVAL_T &gt; *info)</div><div class="ttdef"><b>Definition:</b> Object.hpp:53</div></div>
+<div class="ttc" id="namespacemas_html"><div class="ttname"><a href="namespacemas.html">mas</a></div><div class="ttdef"><b>Definition:</b> Information.hpp:18</div></div>
+<div class="ttc" id="classmas_1_1_information_html"><div class="ttname"><a href="classmas_1_1_information.html">mas::Information</a></div><div class="ttdef"><b>Definition:</b> Information.hpp:25</div></div>
+<div class="ttc" id="classmas_1_1_evaluation_object_html_a5029ee28e34a1496c3c46dc82c5d8b8d"><div class="ttname"><a href="classmas_1_1_evaluation_object.html#a5029ee28e34a1496c3c46dc82c5d8b8d">mas::EvaluationObject::info</a></div><div class="ttdeci">Information&lt; REAL_T, EVAL_T &gt; * info</div><div class="ttdef"><b>Definition:</b> Object.hpp:47</div></div>
+<div class="ttc" id="classmas_1_1_object_html"><div class="ttname"><a href="classmas_1_1_object.html">mas::Object</a></div><div class="ttdef"><b>Definition:</b> Object.hpp:22</div></div>
+<div class="ttc" id="classmas_1_1_object_html_af94e7d17ee027b003f1ae6c30e8a410f"><div class="ttname"><a href="classmas_1_1_object.html#af94e7d17ee027b003f1ae6c30e8a410f">mas::Object::ToString</a></div><div class="ttdeci">virtual std::string ToString() const </div><div class="ttdef"><b>Definition:</b> Object.hpp:28</div></div>
+<div class="ttc" id="classmas_1_1_evaluation_object_html"><div class="ttname"><a href="classmas_1_1_evaluation_object.html">mas::EvaluationObject</a></div><div class="ttdef"><b>Definition:</b> Object.hpp:45</div></div>
+<div class="ttc" id="classmas_1_1_object_html_ae18246100173c7798abeac960fa2c439"><div class="ttname"><a href="classmas_1_1_object.html#ae18246100173c7798abeac960fa2c439">mas::Object::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Object &amp;obj)</div><div class="ttdef"><b>Definition:</b> Object.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 3 2015 10:32:44 for Metapopulation Assessment System by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 3 2015 14:39:36 for Metapopulation Assessment System by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

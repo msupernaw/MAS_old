@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['point',['Point',['../structmas_1_1_point.html#ae242590927afb30395b205175f334e21',1,'mas::Point::Point()'],['../structmas_1_1_point.html#ae2c8af997d05736b6c0cb90978f4d902',1,'mas::Point::Point(const REAL_T &amp;x, const REAL_T &amp;y)']]]
+  ['operator_20structuretype',['operator StructureType',['../classmas_1_1_structure.html#ab383d8ceba4053c0d929f185516bd646',1,'mas::Structure::operator StructureType()'],['../classmas_1_1_structure.html#afc70ae1bcc21a95db8545c33e41204e5',1,'mas::Structure::operator StructureType() const ']]]
 ];

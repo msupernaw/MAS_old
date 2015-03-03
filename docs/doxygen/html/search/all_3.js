@@ -1,15 +1,12 @@
 var searchData=
 [
-  ['getagemax',['GetAgeMax',['../classmas_1_1_subpopulation.html#a55c642990dcf29a5498dc8d2cbfb90a7',1,'mas::Subpopulation']]],
-  ['getbiomass',['GetBiomass',['../classmas_1_1_subpopulation.html#aa87c3373a861eba296a69fe3e657565c',1,'mas::Subpopulation']]],
-  ['getdeaths',['GetDeaths',['../classmas_1_1_subpopulation.html#a3c22a89350333d31b9ea53549a1ae10a',1,'mas::Subpopulation']]],
-  ['getemigration',['GetEmigration',['../classmas_1_1_subpopulation.html#a4d05a146ce3c238c128b551cb5acc1b3',1,'mas::Subpopulation']]],
-  ['getgenders',['GetGenders',['../classmas_1_1_subpopulation.html#a0edecb39baec41b10a839d7eb021721c',1,'mas::Subpopulation']]],
-  ['getgrowth',['GetGrowth',['../classmas_1_1_subpopulation.html#a911cb74fa693f227571c5b1f62056706',1,'mas::Subpopulation']]],
-  ['getimmigration',['GetImmigration',['../classmas_1_1_subpopulation.html#adbce04c7ef48a58c79e99b0bd3ca6c4c',1,'mas::Subpopulation']]],
-  ['getinfo',['GetInfo',['../classmas_1_1_evaluation_object.html#af50a7cf1f746956e996acbd7dec5f43b',1,'mas::EvaluationObject']]],
-  ['getobservations',['GetObservations',['../classmas_1_1_subpopulation.html#a7de7395f13f44432a35ed2e15ff9c06e',1,'mas::Subpopulation']]],
-  ['getrecruitment',['GetRecruitment',['../classmas_1_1_subpopulation.html#af26cae85fc81a9ec8798681da0379e46',1,'mas::Subpopulation']]],
-  ['gettimemax',['GetTimeMax',['../classmas_1_1_subpopulation.html#a3b65093d132b0c445482c7027060a4ea',1,'mas::Subpopulation']]],
-  ['getyield',['GetYield',['../classmas_1_1_subpopulation.html#ade5c7a93d11b9be501bfbe9d7870b2af',1,'mas::Subpopulation']]]
+  ['fisheries_5fage_5fcomposition',['fisheries_age_composition',['../classmas_1_1_observation.html#a58d075ce10fa51dbf4f93ddb3ca7920e',1,'mas::Observation']]],
+  ['fisheries_5fcatch_5fbiomass',['fisheries_catch_biomass',['../classmas_1_1_observation.html#ace6a30e80477280a5f6f18b79761fb93',1,'mas::Observation']]],
+  ['fisheries_5fcatch_5fnumbers',['fisheries_catch_numbers',['../classmas_1_1_observation.html#a5ce77924f9fbb0e384ea94d4a0fa224c',1,'mas::Observation']]],
+  ['fisheries_5fcatch_5fper_5funit_5feffort',['fisheries_catch_per_unit_effort',['../classmas_1_1_observation.html#a0aca199b27283dc8d0902dd42e2babc0',1,'mas::Observation']]],
+  ['fisheries_5fmean_5fsize',['fisheries_mean_size',['../classmas_1_1_observation.html#a5606497a42c83ac55f64f48021c8fa3e',1,'mas::Observation']]],
+  ['fisheries_5fselectivity',['fisheries_selectivity',['../classmas_1_1_observation.html#af044bb2c45e00485bd98f70e6d11f470',1,'mas::Observation']]],
+  ['fisheries_5fsex_5fcomposition',['fisheries_sex_composition',['../classmas_1_1_observation.html#ae7b1b9a34feb637eee59ae13592b2763',1,'mas::Observation']]],
+  ['fisheries_5fsize_5fcomposition',['fisheries_size_composition',['../classmas_1_1_observation.html#aac8ee77d201137577d47e04f56caf02a',1,'mas::Observation']]],
+  ['fisheries_5ftag_5frecovery',['fisheries_tag_recovery',['../classmas_1_1_observation.html#a853ad19a7c4de86a927c311e51d7e484',1,'mas::Observation']]]
 ];

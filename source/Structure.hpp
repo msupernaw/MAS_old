@@ -19,7 +19,8 @@ namespace mas {
         enum StructureType {
             AGE = 0,
             LENGTH,
-            STAGE
+            STAGE,
+            UNKNOWN
         };
 
         StructureType structure_type;
@@ -29,7 +30,7 @@ namespace mas {
          * 
          * The default structure type is age.
          */
-        Structure(StructureType type = AGE) : structure_type(type) {
+        Structure(StructureType type = UNKNOWN) : structure_type(type) {
 
         }
 
@@ -39,6 +40,19 @@ namespace mas {
 
         operator StructureType() const {
             return this->structure_type;
+        }
+        
+        std::string ToString()const{
+            switch(this->structure_type){
+                case AGE:
+                    return "age structured model";
+                case LENGTH:
+                    return "length structured model";
+                case STAGE:
+                    return "stage structured model";
+                default:
+                    return "model structure unknown";
+            }
         }
     };
 

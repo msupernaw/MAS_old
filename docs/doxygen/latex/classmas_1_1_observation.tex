@@ -8,7 +8,169 @@
 
 Inherits \hyperlink{classmas_1_1_object}{mas\+::\+Object}.
 
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{classmas_1_1_observation_a54f6b6af3aab188189e52432c42c20a0}{time\+\_\+max}
+\item 
+uint32\+\_\+t \hyperlink{classmas_1_1_observation_a6843bf35d78a6405a41afc9e4a1334e6}{number\+\_\+of\+\_\+fleets}
+\item 
+uint32\+\_\+t \hyperlink{classmas_1_1_observation_a6e3ce52d5a415a29b901ba4c8007bbc5}{number\+\_\+of\+\_\+surveys}
+\item 
+uint32\+\_\+t \hyperlink{classmas_1_1_observation_abe10a9fcce4305cdc7840b8d25b87c8e}{number\+\_\+of\+\_\+areas}
+\item 
+uint32\+\_\+t \hyperlink{classmas_1_1_observation_a56d2181956836fe2e3d7d39d17795929}{number\+\_\+of\+\_\+age\+\_\+groups}
+\item 
+uint32\+\_\+t \hyperlink{classmas_1_1_observation_a481d3e475a2ff592156ea4b180f91876}{number\+\_\+of\+\_\+genders}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_ace6a30e80477280a5f6f18b79761fb93}{fisheries\+\_\+catch\+\_\+biomass}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a5ce77924f9fbb0e384ea94d4a0fa224c}{fisheries\+\_\+catch\+\_\+numbers}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a0aca199b27283dc8d0902dd42e2babc0}{fisheries\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_af044bb2c45e00485bd98f70e6d11f470}{fisheries\+\_\+selectivity}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a58d075ce10fa51dbf4f93ddb3ca7920e}{fisheries\+\_\+age\+\_\+composition}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_aac8ee77d201137577d47e04f56caf02a}{fisheries\+\_\+size\+\_\+composition}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_ae7b1b9a34feb637eee59ae13592b2763}{fisheries\+\_\+sex\+\_\+composition}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a5606497a42c83ac55f64f48021c8fa3e}{fisheries\+\_\+mean\+\_\+size}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a853ad19a7c4de86a927c311e51d7e484}{fisheries\+\_\+tag\+\_\+recovery}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a4b522ae120f56ca4e0f059c5bd74feec}{survey\+\_\+catch\+\_\+biomass}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_ab872d39efd69ea612fefb5b3eb22bd8a}{survey\+\_\+catch\+\_\+numbers}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_ad5abe789449f80832b9c22a6eac937bc}{survey\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a84b4905765c885a64cad087c157d8c21}{survey\+\_\+selectivity}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a03cceae9a50242b651530b0105ba5cc1}{survey\+\_\+age\+\_\+composition}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a560882c02800a3157afa3d62ca3bbf98}{survey\+\_\+size\+\_\+composition}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a162ad2d12da0f248d1d5f4f360c907e2}{survey\+\_\+sex\+\_\+composition}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a3b7e3e8811a2ecec799c4d55b8ab48be}{survey\+\_\+mean\+\_\+size}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_aac55e9d5be6d73e97476f89751cfa8f9}{survey\+\_\+tag\+\_\+recovery}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a10398b9be5c04879db2bec61fcdd2cee}{study\+\_\+size\+\_\+at\+\_\+age}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a813400be1f65ae364a6cda022f6dffd7}{study\+\_\+maturity\+\_\+data}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_ae509ef85e4f1fc553388b52784ef712a}{study\+\_\+fecundity\+\_\+data}
+\item 
+data\+\_\+vector \hyperlink{classmas_1_1_observation_a3ab6b2699276ca697d77679a24ae3b79}{study\+\_\+length\+\_\+weight\+\_\+data}
+\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename R\+E\+A\+L\+\_\+\+T$>$class mas\+::\+Observation$<$ R\+E\+A\+L\+\_\+\+T $>$}
+
+~\newline
+ \hyperlink{classmas_1_1_observation}{Observation} class ~\newline
+ ~\newline
+ The \hyperlink{classmas_1_1_observation}{Observation} class is the set of observed data for the metapopulation ~\newline
+ and fishery system. This includes fisheries data, survey data, and ~\newline
+ information from studies like estimates of growth, maturity, or fecundity ~\newline
+ curves or individual observations of tagging or ageing data. \hyperlink{classmas_1_1_model}{Model} ~\newline
+ parameters are fit to the observed data through interface with the ~\newline
+ subpopulation, environment, and information classes. The observation class ~\newline
+ is comprised of the basic data and the objects used to store this ~\newline
+ information and interface with the subpopulation, environment, and ~\newline
+ information classes. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmas_1_1_observation_a58d075ce10fa51dbf4f93ddb3ca7920e}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!fisheries\+\_\+age\+\_\+composition@{fisheries\+\_\+age\+\_\+composition}}
+\index{fisheries\+\_\+age\+\_\+composition@{fisheries\+\_\+age\+\_\+composition}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{fisheries\+\_\+age\+\_\+composition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::fisheries\+\_\+age\+\_\+composition}\label{classmas_1_1_observation_a58d075ce10fa51dbf4f93ddb3ca7920e}
+\hypertarget{classmas_1_1_observation_ace6a30e80477280a5f6f18b79761fb93}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!fisheries\+\_\+catch\+\_\+biomass@{fisheries\+\_\+catch\+\_\+biomass}}
+\index{fisheries\+\_\+catch\+\_\+biomass@{fisheries\+\_\+catch\+\_\+biomass}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{fisheries\+\_\+catch\+\_\+biomass}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::fisheries\+\_\+catch\+\_\+biomass}\label{classmas_1_1_observation_ace6a30e80477280a5f6f18b79761fb93}
+\hypertarget{classmas_1_1_observation_a5ce77924f9fbb0e384ea94d4a0fa224c}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!fisheries\+\_\+catch\+\_\+numbers@{fisheries\+\_\+catch\+\_\+numbers}}
+\index{fisheries\+\_\+catch\+\_\+numbers@{fisheries\+\_\+catch\+\_\+numbers}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{fisheries\+\_\+catch\+\_\+numbers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::fisheries\+\_\+catch\+\_\+numbers}\label{classmas_1_1_observation_a5ce77924f9fbb0e384ea94d4a0fa224c}
+\hypertarget{classmas_1_1_observation_a0aca199b27283dc8d0902dd42e2babc0}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!fisheries\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort@{fisheries\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}}
+\index{fisheries\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort@{fisheries\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{fisheries\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::fisheries\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}\label{classmas_1_1_observation_a0aca199b27283dc8d0902dd42e2babc0}
+\hypertarget{classmas_1_1_observation_a5606497a42c83ac55f64f48021c8fa3e}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!fisheries\+\_\+mean\+\_\+size@{fisheries\+\_\+mean\+\_\+size}}
+\index{fisheries\+\_\+mean\+\_\+size@{fisheries\+\_\+mean\+\_\+size}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{fisheries\+\_\+mean\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::fisheries\+\_\+mean\+\_\+size}\label{classmas_1_1_observation_a5606497a42c83ac55f64f48021c8fa3e}
+\hypertarget{classmas_1_1_observation_af044bb2c45e00485bd98f70e6d11f470}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!fisheries\+\_\+selectivity@{fisheries\+\_\+selectivity}}
+\index{fisheries\+\_\+selectivity@{fisheries\+\_\+selectivity}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{fisheries\+\_\+selectivity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::fisheries\+\_\+selectivity}\label{classmas_1_1_observation_af044bb2c45e00485bd98f70e6d11f470}
+\hypertarget{classmas_1_1_observation_ae7b1b9a34feb637eee59ae13592b2763}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!fisheries\+\_\+sex\+\_\+composition@{fisheries\+\_\+sex\+\_\+composition}}
+\index{fisheries\+\_\+sex\+\_\+composition@{fisheries\+\_\+sex\+\_\+composition}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{fisheries\+\_\+sex\+\_\+composition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::fisheries\+\_\+sex\+\_\+composition}\label{classmas_1_1_observation_ae7b1b9a34feb637eee59ae13592b2763}
+\hypertarget{classmas_1_1_observation_aac8ee77d201137577d47e04f56caf02a}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!fisheries\+\_\+size\+\_\+composition@{fisheries\+\_\+size\+\_\+composition}}
+\index{fisheries\+\_\+size\+\_\+composition@{fisheries\+\_\+size\+\_\+composition}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{fisheries\+\_\+size\+\_\+composition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::fisheries\+\_\+size\+\_\+composition}\label{classmas_1_1_observation_aac8ee77d201137577d47e04f56caf02a}
+\hypertarget{classmas_1_1_observation_a853ad19a7c4de86a927c311e51d7e484}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!fisheries\+\_\+tag\+\_\+recovery@{fisheries\+\_\+tag\+\_\+recovery}}
+\index{fisheries\+\_\+tag\+\_\+recovery@{fisheries\+\_\+tag\+\_\+recovery}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{fisheries\+\_\+tag\+\_\+recovery}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::fisheries\+\_\+tag\+\_\+recovery}\label{classmas_1_1_observation_a853ad19a7c4de86a927c311e51d7e484}
+\hypertarget{classmas_1_1_observation_a56d2181956836fe2e3d7d39d17795929}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!number\+\_\+of\+\_\+age\+\_\+groups@{number\+\_\+of\+\_\+age\+\_\+groups}}
+\index{number\+\_\+of\+\_\+age\+\_\+groups@{number\+\_\+of\+\_\+age\+\_\+groups}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{number\+\_\+of\+\_\+age\+\_\+groups}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ uint32\+\_\+t {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::number\+\_\+of\+\_\+age\+\_\+groups}\label{classmas_1_1_observation_a56d2181956836fe2e3d7d39d17795929}
+\hypertarget{classmas_1_1_observation_abe10a9fcce4305cdc7840b8d25b87c8e}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!number\+\_\+of\+\_\+areas@{number\+\_\+of\+\_\+areas}}
+\index{number\+\_\+of\+\_\+areas@{number\+\_\+of\+\_\+areas}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{number\+\_\+of\+\_\+areas}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ uint32\+\_\+t {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::number\+\_\+of\+\_\+areas}\label{classmas_1_1_observation_abe10a9fcce4305cdc7840b8d25b87c8e}
+\hypertarget{classmas_1_1_observation_a6843bf35d78a6405a41afc9e4a1334e6}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!number\+\_\+of\+\_\+fleets@{number\+\_\+of\+\_\+fleets}}
+\index{number\+\_\+of\+\_\+fleets@{number\+\_\+of\+\_\+fleets}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{number\+\_\+of\+\_\+fleets}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ uint32\+\_\+t {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::number\+\_\+of\+\_\+fleets}\label{classmas_1_1_observation_a6843bf35d78a6405a41afc9e4a1334e6}
+\hypertarget{classmas_1_1_observation_a481d3e475a2ff592156ea4b180f91876}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!number\+\_\+of\+\_\+genders@{number\+\_\+of\+\_\+genders}}
+\index{number\+\_\+of\+\_\+genders@{number\+\_\+of\+\_\+genders}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{number\+\_\+of\+\_\+genders}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ uint32\+\_\+t {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::number\+\_\+of\+\_\+genders}\label{classmas_1_1_observation_a481d3e475a2ff592156ea4b180f91876}
+\hypertarget{classmas_1_1_observation_a6e3ce52d5a415a29b901ba4c8007bbc5}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!number\+\_\+of\+\_\+surveys@{number\+\_\+of\+\_\+surveys}}
+\index{number\+\_\+of\+\_\+surveys@{number\+\_\+of\+\_\+surveys}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{number\+\_\+of\+\_\+surveys}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ uint32\+\_\+t {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::number\+\_\+of\+\_\+surveys}\label{classmas_1_1_observation_a6e3ce52d5a415a29b901ba4c8007bbc5}
+\hypertarget{classmas_1_1_observation_ae509ef85e4f1fc553388b52784ef712a}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!study\+\_\+fecundity\+\_\+data@{study\+\_\+fecundity\+\_\+data}}
+\index{study\+\_\+fecundity\+\_\+data@{study\+\_\+fecundity\+\_\+data}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{study\+\_\+fecundity\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::study\+\_\+fecundity\+\_\+data}\label{classmas_1_1_observation_ae509ef85e4f1fc553388b52784ef712a}
+\hypertarget{classmas_1_1_observation_a3ab6b2699276ca697d77679a24ae3b79}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!study\+\_\+length\+\_\+weight\+\_\+data@{study\+\_\+length\+\_\+weight\+\_\+data}}
+\index{study\+\_\+length\+\_\+weight\+\_\+data@{study\+\_\+length\+\_\+weight\+\_\+data}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{study\+\_\+length\+\_\+weight\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::study\+\_\+length\+\_\+weight\+\_\+data}\label{classmas_1_1_observation_a3ab6b2699276ca697d77679a24ae3b79}
+\hypertarget{classmas_1_1_observation_a813400be1f65ae364a6cda022f6dffd7}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!study\+\_\+maturity\+\_\+data@{study\+\_\+maturity\+\_\+data}}
+\index{study\+\_\+maturity\+\_\+data@{study\+\_\+maturity\+\_\+data}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{study\+\_\+maturity\+\_\+data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::study\+\_\+maturity\+\_\+data}\label{classmas_1_1_observation_a813400be1f65ae364a6cda022f6dffd7}
+\hypertarget{classmas_1_1_observation_a10398b9be5c04879db2bec61fcdd2cee}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!study\+\_\+size\+\_\+at\+\_\+age@{study\+\_\+size\+\_\+at\+\_\+age}}
+\index{study\+\_\+size\+\_\+at\+\_\+age@{study\+\_\+size\+\_\+at\+\_\+age}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{study\+\_\+size\+\_\+at\+\_\+age}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::study\+\_\+size\+\_\+at\+\_\+age}\label{classmas_1_1_observation_a10398b9be5c04879db2bec61fcdd2cee}
+\hypertarget{classmas_1_1_observation_a03cceae9a50242b651530b0105ba5cc1}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!survey\+\_\+age\+\_\+composition@{survey\+\_\+age\+\_\+composition}}
+\index{survey\+\_\+age\+\_\+composition@{survey\+\_\+age\+\_\+composition}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{survey\+\_\+age\+\_\+composition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::survey\+\_\+age\+\_\+composition}\label{classmas_1_1_observation_a03cceae9a50242b651530b0105ba5cc1}
+\hypertarget{classmas_1_1_observation_a4b522ae120f56ca4e0f059c5bd74feec}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!survey\+\_\+catch\+\_\+biomass@{survey\+\_\+catch\+\_\+biomass}}
+\index{survey\+\_\+catch\+\_\+biomass@{survey\+\_\+catch\+\_\+biomass}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{survey\+\_\+catch\+\_\+biomass}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::survey\+\_\+catch\+\_\+biomass}\label{classmas_1_1_observation_a4b522ae120f56ca4e0f059c5bd74feec}
+\hypertarget{classmas_1_1_observation_ab872d39efd69ea612fefb5b3eb22bd8a}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!survey\+\_\+catch\+\_\+numbers@{survey\+\_\+catch\+\_\+numbers}}
+\index{survey\+\_\+catch\+\_\+numbers@{survey\+\_\+catch\+\_\+numbers}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{survey\+\_\+catch\+\_\+numbers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::survey\+\_\+catch\+\_\+numbers}\label{classmas_1_1_observation_ab872d39efd69ea612fefb5b3eb22bd8a}
+\hypertarget{classmas_1_1_observation_ad5abe789449f80832b9c22a6eac937bc}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!survey\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort@{survey\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}}
+\index{survey\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort@{survey\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{survey\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::survey\+\_\+catch\+\_\+per\+\_\+unit\+\_\+effort}\label{classmas_1_1_observation_ad5abe789449f80832b9c22a6eac937bc}
+\hypertarget{classmas_1_1_observation_a3b7e3e8811a2ecec799c4d55b8ab48be}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!survey\+\_\+mean\+\_\+size@{survey\+\_\+mean\+\_\+size}}
+\index{survey\+\_\+mean\+\_\+size@{survey\+\_\+mean\+\_\+size}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{survey\+\_\+mean\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::survey\+\_\+mean\+\_\+size}\label{classmas_1_1_observation_a3b7e3e8811a2ecec799c4d55b8ab48be}
+\hypertarget{classmas_1_1_observation_a84b4905765c885a64cad087c157d8c21}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!survey\+\_\+selectivity@{survey\+\_\+selectivity}}
+\index{survey\+\_\+selectivity@{survey\+\_\+selectivity}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{survey\+\_\+selectivity}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::survey\+\_\+selectivity}\label{classmas_1_1_observation_a84b4905765c885a64cad087c157d8c21}
+\hypertarget{classmas_1_1_observation_a162ad2d12da0f248d1d5f4f360c907e2}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!survey\+\_\+sex\+\_\+composition@{survey\+\_\+sex\+\_\+composition}}
+\index{survey\+\_\+sex\+\_\+composition@{survey\+\_\+sex\+\_\+composition}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{survey\+\_\+sex\+\_\+composition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::survey\+\_\+sex\+\_\+composition}\label{classmas_1_1_observation_a162ad2d12da0f248d1d5f4f360c907e2}
+\hypertarget{classmas_1_1_observation_a560882c02800a3157afa3d62ca3bbf98}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!survey\+\_\+size\+\_\+composition@{survey\+\_\+size\+\_\+composition}}
+\index{survey\+\_\+size\+\_\+composition@{survey\+\_\+size\+\_\+composition}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{survey\+\_\+size\+\_\+composition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::survey\+\_\+size\+\_\+composition}\label{classmas_1_1_observation_a560882c02800a3157afa3d62ca3bbf98}
+\hypertarget{classmas_1_1_observation_aac55e9d5be6d73e97476f89751cfa8f9}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!survey\+\_\+tag\+\_\+recovery@{survey\+\_\+tag\+\_\+recovery}}
+\index{survey\+\_\+tag\+\_\+recovery@{survey\+\_\+tag\+\_\+recovery}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{survey\+\_\+tag\+\_\+recovery}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ data\+\_\+vector {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::survey\+\_\+tag\+\_\+recovery}\label{classmas_1_1_observation_aac55e9d5be6d73e97476f89751cfa8f9}
+\hypertarget{classmas_1_1_observation_a54f6b6af3aab188189e52432c42c20a0}{}\index{mas\+::\+Observation@{mas\+::\+Observation}!time\+\_\+max@{time\+\_\+max}}
+\index{time\+\_\+max@{time\+\_\+max}!mas\+::\+Observation@{mas\+::\+Observation}}
+\subsubsection[{time\+\_\+max}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R\+E\+A\+L\+\_\+\+T$>$ uint32\+\_\+t {\bf mas\+::\+Observation}$<$ R\+E\+A\+L\+\_\+\+T $>$\+::time\+\_\+max}\label{classmas_1_1_observation_a54f6b6af3aab188189e52432c42c20a0}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

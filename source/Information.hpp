@@ -14,6 +14,7 @@
 
 #include "Object.hpp"
 #include "Location.hpp"
+#include "Structure.hpp"
 #include "support/rapidjson/include/rapidjson/document.h"
 namespace mas {
 
@@ -25,9 +26,9 @@ namespace mas {
     class Information : public EvaluationObject<REAL_T, EVAL_T> {
         // hold a list of estimable parameters for the population analysis
         std::vector<std::pair<EVAL_T*, int> > estimable_parameters;
-        std::vector<Location<REAL_T,EVAL_T> > areas;
+        std::vector<Location<REAL_T, EVAL_T> > areas;
         std::string model_type;
-
+        Structure<REAL_T, EVAL_T> structure;
 
     public:
 
@@ -79,12 +80,31 @@ namespace mas {
             return this->model_type;
         }
 
+        /**
+         * Verify the configuration 
+         * of the information class.
+         */
+        void Verify() {
+
+        }
+
     private:
 
         void HandleData(const rapidjson::Value::ConstMemberIterator& itr) {
             for (rapidjson::Value::ConstMemberIterator ditr = itr->value.MemberBegin(); ditr != itr->value.MemberEnd(); ++ditr) {
-                if (std::string(ditr->name.GetString()) == "type") {
+                if (std::string(ditr->name.GetString()) == "structure") {
                     this->model_type = ditr->value.GetString();
+
+                    if (this->model_type == "age") {
+                        this->structure.structure_type = Structure<REAL_T, EVAL_T>::AGE;
+                    } else if (this->model_type == "length") {
+                        this->structure.structure_type = Structure<REAL_T, EVAL_T>::LENGTH;
+                    } else if (this->model_type == "stage") {
+                        this->structure.structure_type = Structure<REAL_T, EVAL_T>::STAGE;
+                    } else {
+                        std::cout << "Unknown model structure type " << this->model_type << "\n";
+                        exit(0);
+                    }
                 }
 
                 if (std::string(ditr->name.GetString()) == "area") {
@@ -95,7 +115,7 @@ namespace mas {
 
         void HandleArea(const rapidjson::Value::ConstMemberIterator& itr) {
             for (rapidjson::Value::ConstMemberIterator aitr = itr->value.MemberBegin(); aitr != itr->value.MemberEnd(); ++aitr) {
-                
+
                 std::cout << aitr->name.GetString() << "\n";
             }
         }

@@ -14,6 +14,20 @@
 
 namespace mas {
 
+    
+    /**
+     *<br> Observation class
+     *<br> 
+     *<br> The Observation class is the set of observed data for the metapopulation 
+     *<br> and fishery system. This includes fisheries data, survey data, and 
+     *<br> information from studies like estimates of growth, maturity, or fecundity
+     *<br> curves or individual observations of tagging or ageing data. Model 
+     *<br> parameters are fit to the observed data through interface with the 
+     *<br> subpopulation, environment, and information classes. The observation class
+     *<br> is comprised of the basic data and the objects used to store this 
+     *<br> information and interface with the subpopulation, environment, and 
+     *<br> information classes. 
+     */
     template<typename REAL_T>
     class Observation : public Object {
         typedef std::vector<REAL_T> data_vector;
