@@ -118,6 +118,11 @@ namespace mas {
 
     };
 
+    
+    /**
+     * Location objects hold information about the area
+     * being evaluated. 
+     */
     template<typename REAL_T, typename EVAL_T = REAL_T>
     class Location : public EvaluationObject<REAL_T,EVAL_T> {
         Polygon<REAL_T> area;

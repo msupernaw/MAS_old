@@ -26,8 +26,9 @@ namespace mas {
         public:
             
             /**
-             * Register a model as estimable. Simply adds a pointer to the 
-             * parameter to a list along with its phase. First phase is 0.  
+             * Register a parameter as estimable. Simply adds a pointer to the 
+             * parameter to a list along with its phase of optimization. First 
+             * phase is 0.  
              * @param parameter
              * @param phase
              */

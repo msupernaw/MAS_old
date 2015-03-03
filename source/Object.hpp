@@ -14,6 +14,9 @@
 namespace mas {
 
     
+    /**
+     * Base class for MAS objects.
+     */
     class Object {
    
     public:
@@ -32,6 +35,10 @@ namespace mas {
     };
     
     
+    
+    /**
+     * Base class for MAS evaluation objects.
+     */
     template<typename REAL_T, typename EVAL_T>
     class EvaluationObject: public Object{
     protected:

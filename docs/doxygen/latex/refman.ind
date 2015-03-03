@@ -1,0 +1,197 @@
+\begin{theindex}
+
+  \item {A\+G\+E}
+    \subitem {mas\+::\+Structure}, \hyperpage{17}
+  \item {Add\+Point}
+    \subitem {mas\+::\+Polygon}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Centroid}
+    \subitem {mas\+::\+Polygon}, \hyperpage{16}
+  \item {Compute\+Area}
+    \subitem {mas\+::\+Polygon}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Get\+Age\+Max}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Biomass}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Deaths}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Emigration}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Genders}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Growth}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Immigration}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Info}
+    \subitem {mas\+::\+Evaluation\+Object}, \hyperpage{13}
+  \item {Get\+Observations}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Recruitment}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Time\+Max}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Get\+Yield}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+
+  \indexspace
+
+  \item {info}
+    \subitem {mas\+::\+Evaluation\+Object}, \hyperpage{13}
+  \item {Information.\+hpp}, \hyperpage{21}
+
+  \indexspace
+
+  \item {L\+E\+N\+G\+T\+H}
+    \subitem {mas\+::\+Structure}, \hyperpage{17}
+  \item {Location.\+hpp}, \hyperpage{21}
+
+  \indexspace
+
+  \item {M\+A\+S.\+hpp}, \hyperpage{22}
+  \item {mas}, \hyperpage{11}
+  \item {mas\+::\+Evaluation\+Object}
+    \subitem {Get\+Info}, \hyperpage{13}
+    \subitem {info}, \hyperpage{13}
+    \subitem {Set\+Info}, \hyperpage{13}
+  \item {mas\+::\+Evaluation\+Object$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}, 
+		\hyperpage{13}
+  \item {mas\+::\+Information}
+    \subitem {Register\+Estimable}, \hyperpage{14}
+  \item {mas\+::\+Information$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}, 
+		\hyperpage{14}
+  \item {mas\+::\+Location$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}, 
+		\hyperpage{14}
+  \item {mas\+::\+Model$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}, 
+		\hyperpage{14}
+  \item {mas\+::\+Object}, \hyperpage{15}
+    \subitem {operator$<$$<$}, \hyperpage{15}
+    \subitem {To\+String}, \hyperpage{15}
+  \item {mas\+::\+Observation$<$ R\+E\+A\+L\+\_\+\+T $>$}, 
+		\hyperpage{15}
+  \item {mas\+::\+Point}
+    \subitem {Point}, \hyperpage{16}
+    \subitem {x}, \hyperpage{16}
+    \subitem {y}, \hyperpage{16}
+  \item {mas\+::\+Point$<$ R\+E\+A\+L\+\_\+\+T $>$}, \hyperpage{15}
+  \item {mas\+::\+Polygon}
+    \subitem {Add\+Point}, \hyperpage{16}
+    \subitem {Centroid}, \hyperpage{16}
+    \subitem {Compute\+Area}, \hyperpage{16}
+  \item {mas\+::\+Polygon$<$ R\+E\+A\+L\+\_\+\+T $>$}, \hyperpage{16}
+  \item {mas\+::\+Rectangle$<$ R\+E\+A\+L\+\_\+\+T $>$}, \hyperpage{17}
+  \item {mas\+::\+Structure}
+    \subitem {A\+G\+E}, \hyperpage{17}
+    \subitem {L\+E\+N\+G\+T\+H}, \hyperpage{17}
+    \subitem {operator Structure\+Type}, \hyperpage{18}
+    \subitem {S\+T\+A\+G\+E}, \hyperpage{17}
+    \subitem {Structure}, \hyperpage{17}
+    \subitem {structure\+\_\+type}, \hyperpage{18}
+    \subitem {Structure\+Type}, \hyperpage{17}
+  \item {mas\+::\+Structure$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}, 
+		\hyperpage{17}
+  \item {mas\+::\+Subpopulation}
+    \subitem {Get\+Age\+Max}, \hyperpage{19}
+    \subitem {Get\+Biomass}, \hyperpage{19}
+    \subitem {Get\+Deaths}, \hyperpage{19}
+    \subitem {Get\+Emigration}, \hyperpage{19}
+    \subitem {Get\+Genders}, \hyperpage{19}
+    \subitem {Get\+Growth}, \hyperpage{19}
+    \subitem {Get\+Immigration}, \hyperpage{19}
+    \subitem {Get\+Observations}, \hyperpage{19}
+    \subitem {Get\+Recruitment}, \hyperpage{19}
+    \subitem {Get\+Time\+Max}, \hyperpage{19}
+    \subitem {Get\+Yield}, \hyperpage{19}
+    \subitem {Set\+Age\+Max}, \hyperpage{19}
+    \subitem {Set\+Biomass}, \hyperpage{19}
+    \subitem {Set\+Deaths}, \hyperpage{20}
+    \subitem {Set\+Emigration}, \hyperpage{20}
+    \subitem {Set\+Genders}, \hyperpage{20}
+    \subitem {Set\+Growth}, \hyperpage{20}
+    \subitem {Set\+Immigration}, \hyperpage{20}
+    \subitem {Set\+Observations}, \hyperpage{20}
+    \subitem {Set\+Recruitment}, \hyperpage{20}
+    \subitem {Set\+Time\+Max}, \hyperpage{20}
+    \subitem {Set\+Yield}, \hyperpage{20}
+  \item {mas\+::\+Subpopulation$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}, 
+		\hyperpage{18}
+  \item {Math\+Utilites.\+hpp}, \hyperpage{22}
+  \item {Model.\+hpp}, \hyperpage{22}
+
+  \indexspace
+
+  \item {Object.\+hpp}, \hyperpage{22}
+  \item {Observation.\+hpp}, \hyperpage{23}
+  \item {operator Structure\+Type}
+    \subitem {mas\+::\+Structure}, \hyperpage{18}
+  \item {operator$<$$<$}
+    \subitem {mas\+::\+Object}, \hyperpage{15}
+
+  \indexspace
+
+  \item {Point}
+    \subitem {mas\+::\+Point}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Register\+Estimable}
+    \subitem {mas\+::\+Information}, \hyperpage{14}
+
+  \indexspace
+
+  \item {S\+T\+A\+G\+E}
+    \subitem {mas\+::\+Structure}, \hyperpage{17}
+  \item {Set\+Age\+Max}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Set\+Biomass}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{19}
+  \item {Set\+Deaths}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{20}
+  \item {Set\+Emigration}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{20}
+  \item {Set\+Genders}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{20}
+  \item {Set\+Growth}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{20}
+  \item {Set\+Immigration}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{20}
+  \item {Set\+Info}
+    \subitem {mas\+::\+Evaluation\+Object}, \hyperpage{13}
+  \item {Set\+Observations}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{20}
+  \item {Set\+Recruitment}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{20}
+  \item {Set\+Time\+Max}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{20}
+  \item {Set\+Yield}
+    \subitem {mas\+::\+Subpopulation}, \hyperpage{20}
+  \item {Structure}
+    \subitem {mas\+::\+Structure}, \hyperpage{17}
+  \item {Structure.\+hpp}, \hyperpage{23}
+  \item {structure\+\_\+type}
+    \subitem {mas\+::\+Structure}, \hyperpage{18}
+  \item {Structure\+Type}
+    \subitem {mas\+::\+Structure}, \hyperpage{17}
+  \item {Subpopulation.\+hpp}, \hyperpage{23}
+
+  \indexspace
+
+  \item {To\+String}
+    \subitem {mas\+::\+Object}, \hyperpage{15}
+
+  \indexspace
+
+  \item {x}
+    \subitem {mas\+::\+Point}, \hyperpage{16}
+
+  \indexspace
+
+  \item {y}
+    \subitem {mas\+::\+Point}, \hyperpage{16}
+
+\end{theindex}

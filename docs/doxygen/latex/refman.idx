@@ -1,0 +1,107 @@
+\indexentry{mas@{mas}|hyperpage}{11}
+\indexentry{mas\+::\+Evaluation\+Object$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$@{mas\+::\+Evaluation\+Object$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}|hyperpage}{13}
+\indexentry{mas\+::\+Evaluation\+Object@{mas\+::\+Evaluation\+Object}!Get\+Info@{Get\+Info}|hyperpage}{13}
+\indexentry{Get\+Info@{Get\+Info}!mas\+::\+Evaluation\+Object@{mas\+::\+Evaluation\+Object}|hyperpage}{13}
+\indexentry{mas\+::\+Evaluation\+Object@{mas\+::\+Evaluation\+Object}!Set\+Info@{Set\+Info}|hyperpage}{13}
+\indexentry{Set\+Info@{Set\+Info}!mas\+::\+Evaluation\+Object@{mas\+::\+Evaluation\+Object}|hyperpage}{13}
+\indexentry{mas\+::\+Evaluation\+Object@{mas\+::\+Evaluation\+Object}!info@{info}|hyperpage}{13}
+\indexentry{info@{info}!mas\+::\+Evaluation\+Object@{mas\+::\+Evaluation\+Object}|hyperpage}{13}
+\indexentry{mas\+::\+Information$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$@{mas\+::\+Information$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}|hyperpage}{14}
+\indexentry{mas\+::\+Information@{mas\+::\+Information}!Register\+Estimable@{Register\+Estimable}|hyperpage}{14}
+\indexentry{Register\+Estimable@{Register\+Estimable}!mas\+::\+Information@{mas\+::\+Information}|hyperpage}{14}
+\indexentry{mas\+::\+Location$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$@{mas\+::\+Location$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}|hyperpage}{14}
+\indexentry{mas\+::\+Model$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$@{mas\+::\+Model$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}|hyperpage}{14}
+\indexentry{mas\+::\+Object@{mas\+::\+Object}|hyperpage}{15}
+\indexentry{mas\+::\+Object@{mas\+::\+Object}!To\+String@{To\+String}|hyperpage}{15}
+\indexentry{To\+String@{To\+String}!mas\+::\+Object@{mas\+::\+Object}|hyperpage}{15}
+\indexentry{mas\+::\+Object@{mas\+::\+Object}!operator$<$$<$@{operator$<$$<$}|hyperpage}{15}
+\indexentry{operator$<$$<$@{operator$<$$<$}!mas\+::\+Object@{mas\+::\+Object}|hyperpage}{15}
+\indexentry{mas\+::\+Observation$<$ R\+E\+A\+L\+\_\+\+T $>$@{mas\+::\+Observation$<$ R\+E\+A\+L\+\_\+\+T $>$}|hyperpage}{15}
+\indexentry{mas\+::\+Point$<$ R\+E\+A\+L\+\_\+\+T $>$@{mas\+::\+Point$<$ R\+E\+A\+L\+\_\+\+T $>$}|hyperpage}{15}
+\indexentry{mas\+::\+Point@{mas\+::\+Point}!Point@{Point}|hyperpage}{16}
+\indexentry{Point@{Point}!mas\+::\+Point@{mas\+::\+Point}|hyperpage}{16}
+\indexentry{mas\+::\+Point@{mas\+::\+Point}!Point@{Point}|hyperpage}{16}
+\indexentry{Point@{Point}!mas\+::\+Point@{mas\+::\+Point}|hyperpage}{16}
+\indexentry{mas\+::\+Point@{mas\+::\+Point}!x@{x}|hyperpage}{16}
+\indexentry{x@{x}!mas\+::\+Point@{mas\+::\+Point}|hyperpage}{16}
+\indexentry{mas\+::\+Point@{mas\+::\+Point}!y@{y}|hyperpage}{16}
+\indexentry{y@{y}!mas\+::\+Point@{mas\+::\+Point}|hyperpage}{16}
+\indexentry{mas\+::\+Polygon$<$ R\+E\+A\+L\+\_\+\+T $>$@{mas\+::\+Polygon$<$ R\+E\+A\+L\+\_\+\+T $>$}|hyperpage}{16}
+\indexentry{mas\+::\+Polygon@{mas\+::\+Polygon}!Add\+Point@{Add\+Point}|hyperpage}{16}
+\indexentry{Add\+Point@{Add\+Point}!mas\+::\+Polygon@{mas\+::\+Polygon}|hyperpage}{16}
+\indexentry{mas\+::\+Polygon@{mas\+::\+Polygon}!Centroid@{Centroid}|hyperpage}{16}
+\indexentry{Centroid@{Centroid}!mas\+::\+Polygon@{mas\+::\+Polygon}|hyperpage}{16}
+\indexentry{mas\+::\+Polygon@{mas\+::\+Polygon}!Compute\+Area@{Compute\+Area}|hyperpage}{16}
+\indexentry{Compute\+Area@{Compute\+Area}!mas\+::\+Polygon@{mas\+::\+Polygon}|hyperpage}{16}
+\indexentry{mas\+::\+Rectangle$<$ R\+E\+A\+L\+\_\+\+T $>$@{mas\+::\+Rectangle$<$ R\+E\+A\+L\+\_\+\+T $>$}|hyperpage}{17}
+\indexentry{mas\+::\+Structure$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$@{mas\+::\+Structure$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}|hyperpage}{17}
+\indexentry{mas\+::\+Structure@{mas\+::\+Structure}!Structure\+Type@{Structure\+Type}|hyperpage}{17}
+\indexentry{Structure\+Type@{Structure\+Type}!mas\+::\+Structure@{mas\+::\+Structure}|hyperpage}{17}
+\indexentry{A\+G\+E@{A\+G\+E}!mas\+::\+Structure@{mas\+::\+Structure}|hyperpage}{17}
+\indexentry{mas\+::\+Structure@{mas\+::\+Structure}!A\+G\+E@{A\+G\+E}|hyperpage}{17}
+\indexentry{L\+E\+N\+G\+T\+H@{L\+E\+N\+G\+T\+H}!mas\+::\+Structure@{mas\+::\+Structure}|hyperpage}{17}
+\indexentry{mas\+::\+Structure@{mas\+::\+Structure}!L\+E\+N\+G\+T\+H@{L\+E\+N\+G\+T\+H}|hyperpage}{17}
+\indexentry{S\+T\+A\+G\+E@{S\+T\+A\+G\+E}!mas\+::\+Structure@{mas\+::\+Structure}|hyperpage}{17}
+\indexentry{mas\+::\+Structure@{mas\+::\+Structure}!S\+T\+A\+G\+E@{S\+T\+A\+G\+E}|hyperpage}{17}
+\indexentry{mas\+::\+Structure@{mas\+::\+Structure}!Structure@{Structure}|hyperpage}{17}
+\indexentry{Structure@{Structure}!mas\+::\+Structure@{mas\+::\+Structure}|hyperpage}{17}
+\indexentry{mas\+::\+Structure@{mas\+::\+Structure}!operator Structure\+Type@{operator Structure\+Type}|hyperpage}{18}
+\indexentry{operator Structure\+Type@{operator Structure\+Type}!mas\+::\+Structure@{mas\+::\+Structure}|hyperpage}{18}
+\indexentry{mas\+::\+Structure@{mas\+::\+Structure}!operator Structure\+Type@{operator Structure\+Type}|hyperpage}{18}
+\indexentry{operator Structure\+Type@{operator Structure\+Type}!mas\+::\+Structure@{mas\+::\+Structure}|hyperpage}{18}
+\indexentry{mas\+::\+Structure@{mas\+::\+Structure}!structure\+\_\+type@{structure\+\_\+type}|hyperpage}{18}
+\indexentry{structure\+\_\+type@{structure\+\_\+type}!mas\+::\+Structure@{mas\+::\+Structure}|hyperpage}{18}
+\indexentry{mas\+::\+Subpopulation$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$@{mas\+::\+Subpopulation$<$ R\+E\+A\+L\+\_\+\+T, E\+V\+A\+L\+\_\+\+T $>$}|hyperpage}{18}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Age\+Max@{Get\+Age\+Max}|hyperpage}{19}
+\indexentry{Get\+Age\+Max@{Get\+Age\+Max}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Biomass@{Get\+Biomass}|hyperpage}{19}
+\indexentry{Get\+Biomass@{Get\+Biomass}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Deaths@{Get\+Deaths}|hyperpage}{19}
+\indexentry{Get\+Deaths@{Get\+Deaths}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Emigration@{Get\+Emigration}|hyperpage}{19}
+\indexentry{Get\+Emigration@{Get\+Emigration}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Genders@{Get\+Genders}|hyperpage}{19}
+\indexentry{Get\+Genders@{Get\+Genders}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Growth@{Get\+Growth}|hyperpage}{19}
+\indexentry{Get\+Growth@{Get\+Growth}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Immigration@{Get\+Immigration}|hyperpage}{19}
+\indexentry{Get\+Immigration@{Get\+Immigration}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Observations@{Get\+Observations}|hyperpage}{19}
+\indexentry{Get\+Observations@{Get\+Observations}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Recruitment@{Get\+Recruitment}|hyperpage}{19}
+\indexentry{Get\+Recruitment@{Get\+Recruitment}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Time\+Max@{Get\+Time\+Max}|hyperpage}{19}
+\indexentry{Get\+Time\+Max@{Get\+Time\+Max}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Get\+Yield@{Get\+Yield}|hyperpage}{19}
+\indexentry{Get\+Yield@{Get\+Yield}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Age\+Max@{Set\+Age\+Max}|hyperpage}{19}
+\indexentry{Set\+Age\+Max@{Set\+Age\+Max}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Biomass@{Set\+Biomass}|hyperpage}{19}
+\indexentry{Set\+Biomass@{Set\+Biomass}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{19}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Deaths@{Set\+Deaths}|hyperpage}{20}
+\indexentry{Set\+Deaths@{Set\+Deaths}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{20}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Emigration@{Set\+Emigration}|hyperpage}{20}
+\indexentry{Set\+Emigration@{Set\+Emigration}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{20}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Genders@{Set\+Genders}|hyperpage}{20}
+\indexentry{Set\+Genders@{Set\+Genders}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{20}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Growth@{Set\+Growth}|hyperpage}{20}
+\indexentry{Set\+Growth@{Set\+Growth}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{20}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Immigration@{Set\+Immigration}|hyperpage}{20}
+\indexentry{Set\+Immigration@{Set\+Immigration}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{20}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Observations@{Set\+Observations}|hyperpage}{20}
+\indexentry{Set\+Observations@{Set\+Observations}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{20}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Recruitment@{Set\+Recruitment}|hyperpage}{20}
+\indexentry{Set\+Recruitment@{Set\+Recruitment}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{20}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Time\+Max@{Set\+Time\+Max}|hyperpage}{20}
+\indexentry{Set\+Time\+Max@{Set\+Time\+Max}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{20}
+\indexentry{mas\+::\+Subpopulation@{mas\+::\+Subpopulation}!Set\+Yield@{Set\+Yield}|hyperpage}{20}
+\indexentry{Set\+Yield@{Set\+Yield}!mas\+::\+Subpopulation@{mas\+::\+Subpopulation}|hyperpage}{20}
+\indexentry{Information.\+hpp@{Information.\+hpp}|hyperpage}{21}
+\indexentry{Location.\+hpp@{Location.\+hpp}|hyperpage}{21}
+\indexentry{M\+A\+S.\+hpp@{M\+A\+S.\+hpp}|hyperpage}{22}
+\indexentry{Math\+Utilites.\+hpp@{Math\+Utilites.\+hpp}|hyperpage}{22}
+\indexentry{Model.\+hpp@{Model.\+hpp}|hyperpage}{22}
+\indexentry{Object.\+hpp@{Object.\+hpp}|hyperpage}{22}
+\indexentry{Observation.\+hpp@{Observation.\+hpp}|hyperpage}{23}
+\indexentry{Structure.\+hpp@{Structure.\+hpp}|hyperpage}{23}
+\indexentry{Subpopulation.\+hpp@{Subpopulation.\+hpp}|hyperpage}{23}
