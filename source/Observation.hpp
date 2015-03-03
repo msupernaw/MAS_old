@@ -50,8 +50,7 @@ namespace mas {
         data_vector study_maturity_data;
         data_vector study_fecundity_data;
         data_vector study_length_weight_data;
-        //area definitions
-        std::vector<mas::Polygon<REAL_T> > areas;
+
 
     };
 

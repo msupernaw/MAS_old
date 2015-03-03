@@ -25,6 +25,7 @@ namespace mas {
     class Information : public EvaluationObject<REAL_T, EVAL_T> {
         // hold a list of estimable parameters for the population analysis
         std::vector<std::pair<EVAL_T*, int> > estimable_parameters;
+        std::vector<Location<REAL_T,EVAL_T> > areas;
         std::string model_type;
 
 
