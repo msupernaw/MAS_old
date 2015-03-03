@@ -109,43 +109,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">   19</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">StructureType</a> {</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391ad170bd3595f63a00507e8f6580501aca">   20</a></span>&#160;            <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391ad170bd3595f63a00507e8f6580501aca">AGE</a> = 0,</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a725071afb475725d3735481c0fccbad1">   21</a></span>&#160;            <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a725071afb475725d3735481c0fccbad1">LENGTH</a>,</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a237b21de429cf518d9a4679693165232">   22</a></span>&#160;            <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a237b21de429cf518d9a4679693165232">STAGE</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        };</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">   25</a></span>&#160;        <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">StructureType</a> <a class="code" href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">structure_type</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#ae067864a9b6b817a01e100b404362efe">   32</a></span>&#160;        <a class="code" href="classmas_1_1_structure.html#ae067864a9b6b817a01e100b404362efe">Structure</a>(<a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">StructureType</a> type = <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391ad170bd3595f63a00507e8f6580501aca">AGE</a>) : structure_type(type) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#ab383d8ceba4053c0d929f185516bd646">   36</a></span>&#160;        <span class="keyword">operator</span> <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">StructureType</a>() {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">return</span> this-&gt;<a class="code" href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">structure_type</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#afc70ae1bcc21a95db8545c33e41204e5">   40</a></span>&#160;        <span class="keyword">operator</span> <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">StructureType</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> this-&gt;<a class="code" href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">structure_type</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* STRUCTURE_HPP */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a237b21de429cf518d9a4679693165232">   22</a></span>&#160;            <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a237b21de429cf518d9a4679693165232">STAGE</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a745322f8b0095403b54fa46ac00ffa9a">   23</a></span>&#160;            <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a745322f8b0095403b54fa46ac00ffa9a">UNKNOWN</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">   26</a></span>&#160;        <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">StructureType</a> <a class="code" href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">structure_type</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#add793973e83de587d02b418420b4bc50">   33</a></span>&#160;        <a class="code" href="classmas_1_1_structure.html#add793973e83de587d02b418420b4bc50">Structure</a>(<a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">StructureType</a> type = <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a745322f8b0095403b54fa46ac00ffa9a">UNKNOWN</a>) : structure_type(type) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#ab383d8ceba4053c0d929f185516bd646">   37</a></span>&#160;        <span class="keyword">operator</span> <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">StructureType</a>() {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> this-&gt;<a class="code" href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">structure_type</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#afc70ae1bcc21a95db8545c33e41204e5">   41</a></span>&#160;        <span class="keyword">operator</span> <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">StructureType</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> this-&gt;<a class="code" href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">structure_type</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmas_1_1_structure.html#afc04ba037b160a8faa16849b3e41443c">   45</a></span>&#160;        std::string <a class="code" href="classmas_1_1_structure.html#afc04ba037b160a8faa16849b3e41443c">ToString</a>()<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">switch</span>(this-&gt;structure_type){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391ad170bd3595f63a00507e8f6580501aca">AGE</a>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;age structured model&quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a725071afb475725d3735481c0fccbad1">LENGTH</a>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;length structured model&quot;</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a237b21de429cf518d9a4679693165232">STAGE</a>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;stage structured model&quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;model structure unknown&quot;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* STRUCTURE_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="ttc" id="_object_8hpp_html"><div class="ttname"><a href="_object_8hpp.html">Object.hpp</a></div></div>
-<div class="ttc" id="namespacemas_html"><div class="ttname"><a href="namespacemas.html">mas</a></div><div class="ttdef"><b>Definition:</b> Information.hpp:18</div></div>
-<div class="ttc" id="classmas_1_1_structure_html_af4c08e01fdddc4c24c10be7b6798b16b"><div class="ttname"><a href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">mas::Structure::structure_type</a></div><div class="ttdeci">StructureType structure_type</div><div class="ttdef"><b>Definition:</b> Structure.hpp:25</div></div>
+<div class="ttc" id="namespacemas_html"><div class="ttname"><a href="namespacemas.html">mas</a></div><div class="ttdef"><b>Definition:</b> Information.hpp:19</div></div>
+<div class="ttc" id="classmas_1_1_structure_html_af4c08e01fdddc4c24c10be7b6798b16b"><div class="ttname"><a href="classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b">mas::Structure::structure_type</a></div><div class="ttdeci">StructureType structure_type</div><div class="ttdef"><b>Definition:</b> Structure.hpp:26</div></div>
+<div class="ttc" id="classmas_1_1_structure_html_a727ec3dc2ba5133a94b368ff3fb9f391a745322f8b0095403b54fa46ac00ffa9a"><div class="ttname"><a href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a745322f8b0095403b54fa46ac00ffa9a">mas::Structure::UNKNOWN</a></div><div class="ttdef"><b>Definition:</b> Structure.hpp:23</div></div>
 <div class="ttc" id="classmas_1_1_structure_html_a727ec3dc2ba5133a94b368ff3fb9f391a725071afb475725d3735481c0fccbad1"><div class="ttname"><a href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a725071afb475725d3735481c0fccbad1">mas::Structure::LENGTH</a></div><div class="ttdef"><b>Definition:</b> Structure.hpp:21</div></div>
+<div class="ttc" id="classmas_1_1_structure_html_add793973e83de587d02b418420b4bc50"><div class="ttname"><a href="classmas_1_1_structure.html#add793973e83de587d02b418420b4bc50">mas::Structure::Structure</a></div><div class="ttdeci">Structure(StructureType type=UNKNOWN)</div><div class="ttdef"><b>Definition:</b> Structure.hpp:33</div></div>
 <div class="ttc" id="classmas_1_1_structure_html_a727ec3dc2ba5133a94b368ff3fb9f391"><div class="ttname"><a href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391">mas::Structure::StructureType</a></div><div class="ttdeci">StructureType</div><div class="ttdef"><b>Definition:</b> Structure.hpp:19</div></div>
 <div class="ttc" id="classmas_1_1_structure_html_a727ec3dc2ba5133a94b368ff3fb9f391ad170bd3595f63a00507e8f6580501aca"><div class="ttname"><a href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391ad170bd3595f63a00507e8f6580501aca">mas::Structure::AGE</a></div><div class="ttdef"><b>Definition:</b> Structure.hpp:20</div></div>
 <div class="ttc" id="classmas_1_1_structure_html"><div class="ttname"><a href="classmas_1_1_structure.html">mas::Structure</a></div><div class="ttdef"><b>Definition:</b> Structure.hpp:16</div></div>
-<div class="ttc" id="classmas_1_1_structure_html_ae067864a9b6b817a01e100b404362efe"><div class="ttname"><a href="classmas_1_1_structure.html#ae067864a9b6b817a01e100b404362efe">mas::Structure::Structure</a></div><div class="ttdeci">Structure(StructureType type=AGE)</div><div class="ttdef"><b>Definition:</b> Structure.hpp:32</div></div>
 <div class="ttc" id="classmas_1_1_structure_html_a727ec3dc2ba5133a94b368ff3fb9f391a237b21de429cf518d9a4679693165232"><div class="ttname"><a href="classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a237b21de429cf518d9a4679693165232">mas::Structure::STAGE</a></div><div class="ttdef"><b>Definition:</b> Structure.hpp:22</div></div>
+<div class="ttc" id="classmas_1_1_structure_html_afc04ba037b160a8faa16849b3e41443c"><div class="ttname"><a href="classmas_1_1_structure.html#afc04ba037b160a8faa16849b3e41443c">mas::Structure::ToString</a></div><div class="ttdeci">std::string ToString() const </div><div class="ttdef"><b>Definition:</b> Structure.hpp:45</div></div>
 <div class="ttc" id="classmas_1_1_evaluation_object_html"><div class="ttname"><a href="classmas_1_1_evaluation_object.html">mas::EvaluationObject</a></div><div class="ttdef"><b>Definition:</b> Object.hpp:45</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 3 2015 14:39:36 for Metapopulation Assessment System by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 3 2015 15:36:15 for Metapopulation Assessment System by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

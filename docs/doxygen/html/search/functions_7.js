@@ -12,5 +12,5 @@ var searchData=
   ['setrecruitment',['SetRecruitment',['../classmas_1_1_subpopulation.html#aeac612138675364dc13972262f2a3ead',1,'mas::Subpopulation']]],
   ['settimemax',['SetTimeMax',['../classmas_1_1_subpopulation.html#a24707221e6f23e75eaded822e0bbc308',1,'mas::Subpopulation']]],
   ['setyield',['SetYield',['../classmas_1_1_subpopulation.html#a5dcedd8e261c53760d1999513e773461',1,'mas::Subpopulation']]],
-  ['structure',['Structure',['../classmas_1_1_structure.html#ae067864a9b6b817a01e100b404362efe',1,'mas::Structure']]]
+  ['structure',['Structure',['../classmas_1_1_structure.html#add793973e83de587d02b418420b4bc50',1,'mas::Structure']]]
 ];

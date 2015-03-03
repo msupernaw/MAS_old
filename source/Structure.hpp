@@ -28,7 +28,7 @@ namespace mas {
         /**
          * Default constructor.
          * 
-         * The default structure type is age.
+         * The default structure type is unknown.
          */
         Structure(StructureType type = UNKNOWN) : structure_type(type) {
 

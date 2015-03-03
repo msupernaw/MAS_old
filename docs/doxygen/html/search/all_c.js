@@ -14,7 +14,7 @@ var searchData=
   ['setyield',['SetYield',['../classmas_1_1_subpopulation.html#a5dcedd8e261c53760d1999513e773461',1,'mas::Subpopulation']]],
   ['stage',['STAGE',['../classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391a237b21de429cf518d9a4679693165232',1,'mas::Structure']]],
   ['structure',['Structure',['../classmas_1_1_structure.html',1,'mas']]],
-  ['structure',['Structure',['../classmas_1_1_structure.html#ae067864a9b6b817a01e100b404362efe',1,'mas::Structure']]],
+  ['structure',['Structure',['../classmas_1_1_structure.html#add793973e83de587d02b418420b4bc50',1,'mas::Structure']]],
   ['structure_2ehpp',['Structure.hpp',['../_structure_8hpp.html',1,'']]],
   ['structure_5ftype',['structure_type',['../classmas_1_1_structure.html#af4c08e01fdddc4c24c10be7b6798b16b',1,'mas::Structure']]],
   ['structuretype',['StructureType',['../classmas_1_1_structure.html#a727ec3dc2ba5133a94b368ff3fb9f391',1,'mas::Structure']]],

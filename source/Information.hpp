@@ -111,6 +111,8 @@ namespace mas {
                     this->HandleArea(ditr);
                 }
             }
+            
+            std::cout<<this->structure<<"\n";
         }
 
         void HandleArea(const rapidjson::Value::ConstMemberIterator& itr) {
