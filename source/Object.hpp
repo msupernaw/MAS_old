@@ -9,10 +9,12 @@
 #define	OBJECT_HPP
 
 #include <string>
-#include "Information.hpp"
+
 
 namespace mas {
 
+    template<typename REAL_T, typename EVAL_T>
+    class Information;
     
     /**
      * Base class for MAS objects.

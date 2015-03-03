@@ -8,33 +8,97 @@
 #ifndef INFORMATION_HPP
 #define	INFORMATION_HPP
 
-#include "Object.hpp"
+#include <fstream>
+#include <sstream>
+#include <vector>
 
+#include "Object.hpp"
+#include "Location.hpp"
+#include "support/rapidjson/include/rapidjson/document.h"
 namespace mas {
 
     /**
      * Class to hold information about a models 
      * configuration. 
      */
-    template<typename REAL_T, typename EVAL_T>
-    class Information  {
+    template<typename REAL_T, typename EVAL_T = REAL_T>
+    class Information : public EvaluationObject<REAL_T, EVAL_T> {
         // hold a list of estimable parameters for the population analysis
         std::vector<std::pair<EVAL_T*, int> > estimable_parameters;
-        
-       
+        std::string model_type;
 
-        public:
-            
-            /**
-             * Register a parameter as estimable. Simply adds a pointer to the 
-             * parameter to a list along with its phase of optimization. First 
-             * phase is 0.  
-             * @param parameter
-             * @param phase
-             */
-            void RegisterEstimable(EVAL_T* parameter, int phase = 0){
-                estimable_parameters.push_back(std::pair<EVAL_T*,int>(parameter,phase));
+
+    public:
+
+        /**
+         * Register a parameter as estimable. Simply adds a pointer to the 
+         * parameter to a list along with its phase of optimization. First 
+         * phase is 0.  
+         * @param parameter
+         * @param phase
+         */
+        void RegisterEstimable(EVAL_T* parameter, int phase = 0) {
+            estimable_parameters.push_back(std::pair<EVAL_T*, int>(parameter, phase));
+        }
+
+        /**
+         * Load a model configuration file in JSON
+         * format.
+         * @param file
+         */
+        void LoadModel(const std::string& file) {
+
+            std::ifstream in;
+            in.open(file.c_str());
+
+            if (!in.good()) {
+                std::cout << file << " not found.";
+                exit(0);
             }
+
+            std::stringstream ss;
+
+            std::string line;
+            while (in.good()) {
+                std::getline(in, line);
+                ss << line << "\n";
+            }
+            std::cout << ss.str() << std::endl;
+            rapidjson::Document d;
+            d.Parse<0>(ss.str().c_str());
+            for (rapidjson::Value::ConstMemberIterator itr = d.MemberBegin(); itr != d.MemberEnd(); ++itr) {
+                std::cout << itr->name.GetString() << "\n";
+                if (std::string(itr->name.GetString()) == "data") {
+                    HandleData(itr);
+                }
+            }
+        }
+
+        std::string ToString()const {
+            return this->model_type;
+        }
+
+    private:
+
+        void HandleData(const rapidjson::Value::ConstMemberIterator& itr) {
+            for (rapidjson::Value::ConstMemberIterator ditr = itr->value.MemberBegin(); ditr != itr->value.MemberEnd(); ++ditr) {
+                if (std::string(ditr->name.GetString()) == "type") {
+                    this->model_type = ditr->value.GetString();
+                }
+
+                if (std::string(ditr->name.GetString()) == "area") {
+                    this->HandleArea(ditr);
+                }
+            }
+        }
+
+        void HandleArea(const rapidjson::Value::ConstMemberIterator& itr) {
+            for (rapidjson::Value::ConstMemberIterator aitr = itr->value.MemberBegin(); aitr != itr->value.MemberEnd(); ++aitr) {
+                
+                std::cout << aitr->name.GetString() << "\n";
+            }
+        }
+
 
 
 

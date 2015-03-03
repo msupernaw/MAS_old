@@ -7,15 +7,16 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "source/Location.hpp"
+#include "source/Information.hpp"
 using namespace std;
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-    mas::Location<double> l;
-    std::cout<<l;
+    mas::Information<double> info;
+    info.LoadModel("model.json");
+    std::cout<<info.ToString();
     return 0;
 }
 

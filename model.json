@@ -1,62 +1,60 @@
 {
-    "model": {
-        "name": "red_snapper",
-        "data": {
-            "type": "catch_at_age",
-            "years": "10",
-            "ages": "9",
-            "genders": "1",
-            "areas": "2",
-            "fleets": "2",
-            "area": {
-                "name": "area 1",
-                "natural_mortality": ".3",
-                "polygon": {
-                    "point": {
-                        "x": "0",
-                        "y": "0"
-                    },
-                    "point": {
-                        "x": "0",
-                        "y": "10"
-                    },
-                    "point": {
-                        "x": "10",
-                        "y": "10"
-                    },
-                    "point": {
-                        "x": "10",
-                        "y": "0"
-                    }
+    "name": "red_snapper",
+    "data": {
+        "type": "catch_at_age",
+        "years": "10",
+        "ages": "9",
+        "genders": "1",
+        "areas": "2",
+        "fleets": "2",
+        "area": {
+            "name": "area 1",
+            "natural_mortality": ".3",
+            "polygon": {
+                "point": {
+                    "x": "0",
+                    "y": "0"
                 },
-                "path": "catch_at_age1.dat",
-                "order": "numbers_at_age, effort"
+                "point": {
+                    "x": "0",
+                    "y": "10"
+                },
+                "point": {
+                    "x": "10",
+                    "y": "10"
+                },
+                "point": {
+                    "x": "10",
+                    "y": "0"
+                }
             },
-            "area": {
-                "name": "area 2",
-                "natural_mortality": ".27",
-                "polygon": {
-                    "point": {
-                        "x": "20",
-                        "y": "20"
-                    },
-                    "point": {
-                        "x": "20",
-                        "y": "30"
-                    },
-                    "point": {
-                        "x": "30",
-                        "y": "30"
-                    },
-                    "point": {
-                        "x": "30",
-                        "y": "20"
-                    }
+            "path": "catch_at_age1.dat",
+            "order": "numbers_at_age, effort"
+        },
+        "area": {
+            "name": "area 2",
+            "natural_mortality": ".27",
+            "polygon": {
+                "point": {
+                    "x": "20",
+                    "y": "20"
                 },
-                "path": "catch_at_age2.dat",
-                "order": "numbers_at_age, effort"
-            }
-
+                "point": {
+                    "x": "20",
+                    "y": "30"
+                },
+                "point": {
+                    "x": "30",
+                    "y": "30"
+                },
+                "point": {
+                    "x": "30",
+                    "y": "20"
+                }
+            },
+            "path": "catch_at_age2.dat",
+            "order": "numbers_at_age, effort"
         }
+
     }
 }

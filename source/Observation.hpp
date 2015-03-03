@@ -8,7 +8,8 @@
 #ifndef OBSERVATION_HPP
 #define	OBSERVATION_HPP
 
-#include "Object.hpp"
+#include <vector>
+
 #include "Location.hpp"
 
 namespace mas {
@@ -16,6 +17,7 @@ namespace mas {
     template<typename REAL_T>
     class Observation : public Object {
         typedef std::vector<REAL_T> data_vector;
+       
     public:
         uint32_t time_max;
         uint32_t number_of_fleets;
@@ -49,7 +51,7 @@ namespace mas {
         data_vector study_fecundity_data;
         data_vector study_length_weight_data;
         //area definitions
-        std::vector<Polygon<REAL_T> > areas;
+        std::vector<mas::Polygon<REAL_T> > areas;
 
     };
 
