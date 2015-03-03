@@ -2,7 +2,7 @@
     "name": "red_snapper_assesment",
     "data": {
         "structure": "age",
-        "years": "10" ,
+        "years": "10",
         "ages": "9",
         "genders": "1",
         "areas": "2",
@@ -28,8 +28,16 @@
                     "y": "0"
                 }
             },
-            "path": "catch_at_age1.dat",
-            "order": "numbers_at_age, effort"
+            "fleet": {
+                "name": "fleet 1",
+                "path": "catch_at_age1.dat",
+                "order": "numbers_at_age, effort"
+            },
+            "survey": {
+                "name": "survey 1",
+                "path": "survey_catch_at_age1.dat",
+                "order": "numbers_at_age, effort"
+            }
         },
         "area": {
             "name": "area 2",
@@ -52,8 +60,16 @@
                     "y": "20"
                 }
             },
-            "path": "catch_at_age2.dat",
-            "order": "numbers_at_age, effort"
+            "fleet": {
+                "name": "fleet 1",
+                "path": "catch_at_age1.dat",
+                "order": "numbers_at_age, effort"
+            },
+            "survey": {
+                "name": "survey 1",
+                "path": "survey_catch_at_age1.dat",
+                "order": "numbers_at_age, effort"
+            }
         }
 
     }
