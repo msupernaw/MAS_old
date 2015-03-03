@@ -9,6 +9,7 @@
 #define	OBSERVATION_HPP
 
 #include "Object.hpp"
+#include "Location.hpp"
 
 namespace mas {
 
@@ -47,6 +48,8 @@ namespace mas {
         data_vector study_maturity_data;
         data_vector study_fecundity_data;
         data_vector study_length_weight_data;
+        //area definitions
+        std::vector<Polygon<REAL_T> > areas;
 
     };
 
