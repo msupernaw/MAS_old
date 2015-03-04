@@ -7,6 +7,7 @@
         "genders": "1",
         "areas": "2",
         "fleets": "2",
+        "reference_datum":"wqs84",
         "area": {
             "name": "area 1",
             "polygon": {
