@@ -12,6 +12,7 @@
 
 #include "Object.hpp"
 #include "Subpopulation.hpp"
+#include "Observation.hpp"
 
 namespace mas {
 
@@ -118,17 +119,50 @@ namespace mas {
 
     };
 
-    
     /**
      * Location objects hold information about the area
      * being evaluated. 
      */
     template<typename REAL_T, typename EVAL_T = REAL_T>
-    class Location : public EvaluationObject<REAL_T,EVAL_T> {
+    class Location : public EvaluationObject<REAL_T, EVAL_T> {
         Polygon<REAL_T> area;
         std::vector<Polygon<REAL_T> > adjacent_areas;
         std::vector<Subpopulation< REAL_T, EVAL_T> > subpopulations;
+        Observation<REAL_T> observations;
+        std::string name;
+    public:
 
+        Polygon<REAL_T> GetArea() const {
+            return area;
+        }
+
+        void SetArea(Polygon<REAL_T> area) {
+            this->area = area;
+        }
+
+        std::string GetName() const {
+            return name;
+        }
+
+        void SetName(std::string name) {
+            this->name = name;
+        }
+
+        Observation<REAL_T> GetObservations() const {
+            return observations;
+        }
+
+        void SetObservations(Observation<REAL_T> observations) {
+            this->observations = observations;
+        }
+
+        std::vector<Subpopulation<REAL_T, EVAL_T> > GetSubpopulations() const {
+            return subpopulations;
+        }
+
+        void SetSubpopulations(std::vector<Subpopulation<REAL_T, EVAL_T> > subpopulations) {
+            this->subpopulations = subpopulations;
+        }
 
     };
 

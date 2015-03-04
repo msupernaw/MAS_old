@@ -116,8 +116,13 @@ namespace mas {
         }
 
         void HandleArea(const rapidjson::Value::ConstMemberIterator& itr) {
+            Location<REAL_T,EVAL_T> area;
             for (rapidjson::Value::ConstMemberIterator aitr = itr->value.MemberBegin(); aitr != itr->value.MemberEnd(); ++aitr) {
 
+                if(std::string(aitr->name.GetString()) == "name"){
+                    area.SetName();
+                }
+                
                 std::cout << aitr->name.GetString() << "\n";
             }
         }

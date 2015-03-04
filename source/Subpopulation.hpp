@@ -46,6 +46,9 @@ namespace mas {
         std::vector<EVAL_T> Y; // yield{age x time}
         std::vector<EVAL_T> O; // emigration{age x time}
         Observation<REAL_T>* observations;
+        bool has_fishery_data;
+        bool has_survey_data;
+        bool has_study_data;
 
     public:
 
