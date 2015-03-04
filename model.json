@@ -29,13 +29,13 @@
             },
             "fleet": {
                 "name": "fleet 1",
-                "selectivity": "gill_net",
+                "selectivity": "hook",
                 "path": "catch_at_age1.dat",
                 "order": "numbers_at_age, effort"
             },
             "survey": {
                 "name": "survey 1",
-                "selectivity": "gill_net",
+                "selectivity": "hook",
                 "path": "survey_catch_at_age1.dat",
                 "order": "numbers_at_age, effort"
             },
@@ -69,11 +69,13 @@
             },
             "fleet": {
                 "name": "fleet 1",
+                "selectivity": "hook",
                 "path": "catch_at_age1.dat",
                 "order": "numbers_at_age, effort"
             },
             "survey": {
                 "name": "survey 1",
+                "selectivity": "hook",
                 "path": "survey_catch_at_age1.dat",
                 "order": "numbers_at_age, effort"
             },
