@@ -11,6 +11,7 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <map>
 #include <string>
 
 #include "Object.hpp"
@@ -25,15 +26,26 @@ namespace mas {
      */
     template<typename REAL_T, typename EVAL_T = REAL_T>
     class Information : public EvaluationObject<REAL_T, EVAL_T> {
+        std::string model_type;
+        Structure<REAL_T, EVAL_T> structure; //model structure,ie age-based, length-based, stage-based, etc
         // hold a list of estimable parameters for the population analysis
         std::vector<std::pair<EVAL_T*, int> > estimable_parameters;
-        std::vector<Location<REAL_T, EVAL_T> > areas;
-        std::string model_type;
-        Structure<REAL_T, EVAL_T> structure;
-        std::vector<std::string> comments; //additional information, used for report generation
-        
+        //store areas by name
+        std::map<std::string, Location<REAL_T, EVAL_T> > areas;
+        //store in comments by name
+        std::map<std::string, std::string> comments; //additional information, used for report generation
+
+        uint32_t number_of_years;
+        uint32_t number_of_seasons;
+        uint32_t number_of_fleets;
+        uint32_t number_of_surveys;
+        uint32_t number_of_areas;
+        uint32_t number_of_age_groups;
+        uint32_t number_of_size_groups;
+        uint32_t number_of_gender_groups;
+
+
     public:
-        
 
         /**
          * Register a parameter as estimable. Simply adds a pointer to the 
@@ -109,28 +121,78 @@ namespace mas {
                         exit(0);
                     }
                 }
+                if (std::string(ditr->name.GetString()) == "years") {
+                    this->number_of_years = ditr->value.GetInt();
+                }
+
+                if (std::string(ditr->name.GetString()) == "seasons") {
+                    this->number_of_seasons = ditr->value.GetInt();
+                }
+
+                if (std::string(ditr->name.GetString()) == "ages") {
+                    this->number_of_age_groups = ditr->value.GetInt();
+                }
+
+                if (std::string(ditr->name.GetString()) == "sizes") {
+                    this->number_of_size_groups = ditr->value.GetInt();
+                }
+
+                if (std::string(ditr->name.GetString()) == "genders") {
+                    this->number_of_gender_groups = ditr->value.GetInt();
+                }
 
                 if (std::string(ditr->name.GetString()) == "area") {
                     this->HandleArea(ditr);
                 }
             }
-            
-            std::cout<<this->structure<<"\n";
+
+            std::cout << this->structure << "\n";
         }
 
         void HandleArea(const rapidjson::Value::ConstMemberIterator& itr) {
-            Location<REAL_T,EVAL_T> area;
+            Location<REAL_T, EVAL_T> area;
+
             for (rapidjson::Value::ConstMemberIterator aitr = itr->value.MemberBegin(); aitr != itr->value.MemberEnd(); ++aitr) {
 
-                if(std::string(aitr->name.GetString()) == "name"){
+                if (std::string(aitr->name.GetString()) == "name") {
                     area.SetName(aitr->value.GetString());
                 }
-                
-                std::cout << aitr->name.GetString() << "\n";
+
+                if (std::string(aitr->name.GetString()) == "polygon") {
+                    this->HandlePolygon(itr, area);
+                }
+
             }
         }
 
+        void HandlePolygon(const rapidjson::Value::ConstMemberIterator& itr,
+                Location<REAL_T, EVAL_T>& area) {
+            Polygon<REAL_T> polygon;
 
+
+
+        }
+
+        void HandlePoint(const rapidjson::Value::ConstMemberIterator& itr,
+                Polygon<REAL_T>& polygon) {
+
+        }
+
+        void HandleFleet(const rapidjson::Value::ConstMemberIterator& itr) {
+
+        }
+
+        void HandleSurvey(const rapidjson::Value::ConstMemberIterator& itr) {
+
+        }
+
+        void HandleStudy(const rapidjson::Value::ConstMemberIterator& itr) {
+
+        }
+
+        void HandlePopulationModel(const rapidjson::Value::ConstMemberIterator& itr) {
+
+        }
 
 
 

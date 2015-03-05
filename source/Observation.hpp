@@ -39,7 +39,8 @@ namespace mas {
         uint32_t number_of_surveys;
         uint32_t number_of_areas;
         uint32_t number_of_age_groups;
-        uint32_t number_of_genders;
+        uint32_t number_of_size_groups;
+        uint32_t number_of_gender_groups;
         //fisheries data
         data_vector fisheries_catch_biomass;
         data_vector fisheries_catch_numbers;
