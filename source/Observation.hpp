@@ -34,6 +34,7 @@ namespace mas {
        
     public:
         uint32_t time_max;
+        uint32_t number_of_seasons;
         uint32_t number_of_fleets;
         uint32_t number_of_surveys;
         uint32_t number_of_areas;
@@ -65,6 +66,7 @@ namespace mas {
         data_vector study_fecundity_data;
         data_vector study_length_weight_data;
 
+        
 
     };
 

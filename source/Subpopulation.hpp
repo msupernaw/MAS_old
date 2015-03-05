@@ -11,7 +11,7 @@
 #include <vector>
 
 #include "Object.hpp"
-
+#include "Location.hpp"
 
 
 
@@ -35,6 +35,38 @@ namespace mas {
      */
     template<typename REAL_T, typename EVAL_T = REAL_T>
     class Subpopulation : public EvaluationObject<REAL_T, EVAL_T> {
+        
+        public:
+            
+        enum GrowthModel {
+            LOGISISTIC = 0,
+            VON_BERTALANFFLY,
+            NONE
+        };
+
+        enum RecruitmentModel {
+            BEVERTON_HOLT = 0,
+            HOCKEY_STICK,
+            SURVIVAL_BASED,
+            NONE
+        };
+
+        enum SelectivityModel {
+        };
+
+        enum MaturityModel {
+        };
+
+        enum FecundityModel {
+        };
+
+        enum MortalityModel {
+            POPE = 0,
+            CONTINUOUS,
+            NONE
+        };
+        private:
+        
         uint32_t time_max; // max time dimension
         uint32_t age_max; // max age dimension
         uint32_t genders; // number of genders represented in this subpopulation
@@ -45,12 +77,22 @@ namespace mas {
         std::vector<EVAL_T> D; // deaths{age x time}
         std::vector<EVAL_T> Y; // yield{age x time}
         std::vector<EVAL_T> O; // emigration{age x time}
-        Observation<REAL_T>* observations;
+        Observation<REAL_T>* observations; // a pointer to the observed data. 
+        Location<REAL_T,EVAL_T> location;//subpopulations current location
         bool has_fishery_data;
         bool has_survey_data;
         bool has_study_data;
 
+        //sub models
+        GrowthModel growth_model;
+        RecruitmentModel recruitment_model;
+        SelectivityModel selectivity_model;
+        MaturityModel maturity_model;
+        FecundityModel fecundity_model;
+        MortalityModel mortality_model;
+        
     public:
+
 
         const std::vector<EVAL_T>& GetBiomass() const {
             return B;

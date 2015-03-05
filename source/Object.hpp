@@ -53,6 +53,15 @@ namespace mas {
         void SetInfo(Information<REAL_T, EVAL_T>* info) {
             this->info = info;
         }
+        
+        /**
+         * Initialize from a Information object.
+         * @param info
+         */
+        virtual void Initialize(Information<REAL_T, EVAL_T>* info) {
+            this->info = info;
+        }
+        
 
     };
     

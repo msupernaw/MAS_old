@@ -11,6 +11,7 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <string>
 
 #include "Object.hpp"
 #include "Location.hpp"
@@ -29,8 +30,10 @@ namespace mas {
         std::vector<Location<REAL_T, EVAL_T> > areas;
         std::string model_type;
         Structure<REAL_T, EVAL_T> structure;
-
+        std::vector<std::string> comments; //additional information, used for report generation
+        
     public:
+        
 
         /**
          * Register a parameter as estimable. Simply adds a pointer to the 
@@ -120,7 +123,7 @@ namespace mas {
             for (rapidjson::Value::ConstMemberIterator aitr = itr->value.MemberBegin(); aitr != itr->value.MemberEnd(); ++aitr) {
 
                 if(std::string(aitr->name.GetString()) == "name"){
-                    area.SetName();
+                    area.SetName(aitr->value.GetString());
                 }
                 
                 std::cout << aitr->name.GetString() << "\n";

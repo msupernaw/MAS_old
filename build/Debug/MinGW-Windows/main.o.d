@@ -1,6 +1,6 @@
 build/Debug/MinGW-Windows/main.o: main.cpp source/Information.hpp \
- source/Object.hpp source/Location.hpp source/Subpopulation.hpp \
- source/Observation.hpp source/Structure.hpp \
+ source/Object.hpp source/Location.hpp source/Observation.hpp \
+ source/Structure.hpp \
  source/support/rapidjson/include/rapidjson/document.h \
  source/support/rapidjson/include/rapidjson/reader.h \
  source/support/rapidjson/include/rapidjson/rapidjson.h \
@@ -22,8 +22,6 @@ source/Information.hpp:
 source/Object.hpp:
 
 source/Location.hpp:
-
-source/Subpopulation.hpp:
 
 source/Observation.hpp:
 
