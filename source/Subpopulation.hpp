@@ -78,10 +78,11 @@ namespace mas {
         std::vector<EVAL_T> Y; // yield{age x time}
         std::vector<EVAL_T> O; // emigration{age x time}
         Observation<REAL_T>* observations; // a pointer to the observed data. 
-        Location<REAL_T,EVAL_T> location;//subpopulations current location
+        Location<REAL_T,EVAL_T>* location;//subpopulations current location
         bool has_fishery_data;
         bool has_survey_data;
         bool has_study_data;
+        
 
         //sub models
         GrowthModel growth_model;
@@ -181,6 +182,55 @@ namespace mas {
         void SetTimeMax(uint32_t time_max) {
             this->time_max = time_max;
         }
+        
+        FecundityModel GetFecundityModel() const {
+            return fecundity_model;
+        }
+
+        void SetFecundityModel(FecundityModel fecundity_model) {
+            this->fecundity_model = fecundity_model;
+        }
+
+        GrowthModel GetGrowthModel() const {
+            return growth_model;
+        }
+
+        void SetGrowthModel(GrowthModel growth_model) {
+            this->growth_model = growth_model;
+        }
+
+        MaturityModel GetMaturityModel() const {
+            return maturity_model;
+        }
+
+        void SetMaturityModel(MaturityModel maturity_model) {
+            this->maturity_model = maturity_model;
+        }
+
+        MortalityModel GetMortalityModel() const {
+            return mortality_model;
+        }
+
+        void SetMortalityModel(MortalityModel mortality_model) {
+            this->mortality_model = mortality_model;
+        }
+
+        RecruitmentModel GetRecruitmentModel() const {
+            return recruitment_model;
+        }
+
+        void SetRecruitmentModel(RecruitmentModel recruitment_model) {
+            this->recruitment_model = recruitment_model;
+        }
+
+        SelectivityModel GetSelectivityModel() const {
+            return selectivity_model;
+        }
+
+        void SetSelectivityModel(SelectivityModel selectivity_model) {
+            this->selectivity_model = selectivity_model;
+        }
+
 
     };
 
