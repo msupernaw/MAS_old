@@ -33,7 +33,8 @@ namespace mas {
         //store areas by name
         std::map<std::string, Location<REAL_T, EVAL_T> > areas;
         //store in comments by name
-        std::map<std::string, std::string> comments; //additional information, used for report generation
+        std::vector<std::string> model_comments; //additional information, used for report generation
+        std::vector<std::string> data_comments; //additional information, used for report generation
 
         uint32_t number_of_years;
         uint32_t number_of_seasons;
@@ -42,10 +43,25 @@ namespace mas {
         uint32_t number_of_areas;
         uint32_t number_of_age_groups;
         uint32_t number_of_size_groups;
+        uint32_t number_of_stage_groups;
         uint32_t number_of_gender_groups;
+        uint32_t number_of_studies;
 
 
     public:
+
+        Information() :
+        number_of_age_groups(0),
+        number_of_areas(0),
+        number_of_fleets(0),
+        number_of_gender_groups(0),
+        number_of_seasons(0),
+        number_of_size_groups(0),
+        number_of_stage_groups(0),
+        number_of_studies(0),
+        number_of_surveys(0),
+        number_of_years(0) {
+        }
 
         /**
          * Register a parameter as estimable. Simply adds a pointer to the 
@@ -80,19 +96,62 @@ namespace mas {
                 std::getline(in, line);
                 ss << line << "\n";
             }
-            std::cout << ss.str() << std::endl;
             rapidjson::Document d;
             d.Parse<0>(ss.str().c_str());
             for (rapidjson::Value::ConstMemberIterator itr = d.MemberBegin(); itr != d.MemberEnd(); ++itr) {
-                std::cout << itr->name.GetString() << "\n";
                 if (std::string(itr->name.GetString()) == "data") {
                     HandleData(itr);
+                }
+                if (std::string(itr->name.GetString()) == "comment") {
+                    this->model_comments.push_back(std::string(itr->value.GetString()));
                 }
             }
         }
 
         std::string ToString()const {
-            return this->model_type;
+            std::stringstream ss;
+            ss << "Model Type: " << this->structure.ToString() << "\n";
+            switch (this->structure.structure_type) {
+
+                case Structure<REAL_T, EVAL_T>::AGE:
+                    ss << "Number of Age Groups: " << this->number_of_age_groups << "\n";
+                    break;
+                case Structure<REAL_T, EVAL_T>::LENGTH:
+                    ss << "Number of Size Groups: " << this->number_of_size_groups << "\n";
+                    break;
+                case Structure<REAL_T, EVAL_T>::STAGE:
+                    ss << "Number of Stage Groups: " << this->number_of_stage_groups << "\n";
+                default:
+                    break;
+
+            }
+
+            ss << "Number of Fleets: " << this->number_of_fleets << "\n";
+            ss << "Number of Surveys: " << this->number_of_surveys << "\n";
+            ss << "Number of Studies: " << this->number_of_studies << "\n";
+            typedef typename std::map<std::string, Location<REAL_T, EVAL_T> >::const_iterator location_it;
+
+            for (location_it it = this->areas.begin();
+                    it != this->areas.end(); ++it) {
+                ss << it->second.ToString();
+            }
+
+            if (this->model_comments.size() > 0) {
+                ss << "Model Comments:\n";
+                for (int i = 0; i < this->model_comments.size(); i++) {
+                    ss << " -" << this->model_comments[i] << "\n";
+                }
+                ss<<"\n";
+            }
+            
+             if (this->data_comments.size() > 0) {
+                ss << "Data Comments:\n";
+                for (int i = 0; i < this->data_comments.size(); i++) {
+                    ss << " -" << this->data_comments[i] << "\n";
+                }
+                ss<<"\n";
+            }
+            return ss.str();
         }
 
         /**
@@ -107,6 +166,11 @@ namespace mas {
 
         void HandleData(const rapidjson::Value::ConstMemberIterator& itr) {
             for (rapidjson::Value::ConstMemberIterator ditr = itr->value.MemberBegin(); ditr != itr->value.MemberEnd(); ++ditr) {
+
+                if (std::string(ditr->name.GetString()) == "comment") {
+                    this->data_comments.push_back(std::string(ditr->value.GetString()));
+                }
+
                 if (std::string(ditr->name.GetString()) == "structure") {
                     this->model_type = ditr->value.GetString();
 
@@ -144,9 +208,25 @@ namespace mas {
                 if (std::string(ditr->name.GetString()) == "area") {
                     this->HandleArea(ditr);
                 }
+                if (std::string(ditr->name.GetString()) == "observations") {
+                    this->HandleObservations(ditr);
+                }
+
+                if (std::string(ditr->name.GetString()) == "fleet") {
+                    this->HandleFleet(ditr);
+                }
+
+                if (std::string(ditr->name.GetString()) == "survey") {
+                    this->HandleSurvey(ditr);
+                }
+
+                if (std::string(ditr->name.GetString()) == "study") {
+                    this->HandleStudy(ditr);
+                }
+
+
             }
 
-            std::cout << this->structure << "\n";
         }
 
         void HandleArea(const rapidjson::Value::ConstMemberIterator& itr) {
@@ -159,38 +239,86 @@ namespace mas {
                 }
 
                 if (std::string(aitr->name.GetString()) == "polygon") {
-                    this->HandlePolygon(itr, area);
+                    this->HandlePolygon(aitr, area);
                 }
 
             }
+
+            this->areas[area.GetName()] = area;
         }
 
         void HandlePolygon(const rapidjson::Value::ConstMemberIterator& itr,
                 Location<REAL_T, EVAL_T>& area) {
             Polygon<REAL_T> polygon;
 
+            for (rapidjson::Value::ConstMemberIterator pitr = itr->value.MemberBegin(); pitr != itr->value.MemberEnd(); ++pitr) {
+                if (std::string(pitr->name.GetString()) == "point") {
+                    this->HandlePoint(pitr, polygon);
+                }
+            }
 
+            area.SetArea(polygon);
 
         }
 
         void HandlePoint(const rapidjson::Value::ConstMemberIterator& itr,
                 Polygon<REAL_T>& polygon) {
+            REAL_T x = 0.0;
+            REAL_T y = 0.0;
+            bool has_x = false;
+            bool has_y = false;
+            for (rapidjson::Value::ConstMemberIterator pitr = itr->value.MemberBegin(); pitr != itr->value.MemberEnd(); ++pitr) {
+
+                if (std::string(pitr->name.GetString()) == "x") {
+                    has_x = true;
+                    x = static_cast<REAL_T> (pitr->value.GetDouble());
+                }
+
+                if (std::string(pitr->name.GetString()) == "x") {
+                    has_y = true;
+                    y = static_cast<REAL_T> (pitr->value.GetDouble());
+                }
+
+            }
+
+            if (has_x && has_y) {
+                polygon.AddPoint(Point<REAL_T>(x, y));
+            } else {
+                std::cout << "invalid point!";
+                exit(0);
+            }
 
         }
 
-        void HandleFleet(const rapidjson::Value::ConstMemberIterator& itr) {
+        void HandleObservations(const rapidjson::Value::ConstMemberIterator & itr) {
+            for (rapidjson::Value::ConstMemberIterator ditr = itr->value.MemberBegin(); ditr != itr->value.MemberEnd(); ++ditr) {
+                if (std::string(ditr->name.GetString()) == "fleet") {
+                    this->HandleFleet(ditr);
+                }
 
+                if (std::string(ditr->name.GetString()) == "survey") {
+                    this->HandleSurvey(ditr);
+                }
+
+                if (std::string(ditr->name.GetString()) == "study") {
+                    this->HandleStudy(ditr);
+                }
+            }
         }
 
-        void HandleSurvey(const rapidjson::Value::ConstMemberIterator& itr) {
-
+        void HandleFleet(const rapidjson::Value::ConstMemberIterator & itr) {
+            this->number_of_fleets++;
         }
 
-        void HandleStudy(const rapidjson::Value::ConstMemberIterator& itr) {
-
+        void HandleSurvey(const rapidjson::Value::ConstMemberIterator & itr) {
+            this->number_of_surveys++;
         }
 
-        void HandlePopulationModel(const rapidjson::Value::ConstMemberIterator& itr) {
+        void HandleStudy(const rapidjson::Value::ConstMemberIterator & itr) {
+            this->number_of_studies++;
+        }
+
+        void HandlePopulationModel(const rapidjson::Value::ConstMemberIterator & itr) {
 
         }
 

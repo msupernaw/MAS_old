@@ -52,8 +52,8 @@ namespace mas {
          * 
          * @return 
          */
-        REAL_T ComputeArea() {
-            Sort();
+        REAL_T ComputeArea() const{
+//            Sort();
             REAL_T area = static_cast<REAL_T> (0.0);
             uint32_t j = points.size() - 1;
             for (uint32_t i = 0; i < points.size(); i++) {
@@ -102,6 +102,15 @@ namespace mas {
             return centroid;
         }
 
+        std::vector<Point<REAL_T> > GetPoints() const {
+            return points;
+        }
+
+        void SetPoints(std::vector<Point<REAL_T> > points) {
+            this->points = points;
+        }
+
+
     private:
 
         /**
@@ -144,6 +153,25 @@ namespace mas {
         void SetName(std::string name) {
             this->name = name;
         }
+
+        std::string ToString() const {
+            std::stringstream ss;
+            ss << "Location{\n";
+            ss << "   Name: " << this->name << "\n";
+            ss << "   Area: " << this->area.ComputeArea() << "\n";
+            ss << "   Polygon{\n";
+            for (int i = 0; i < this->area.GetPoints().size(); i++) {
+                ss << "       point{\n";
+                ss << "          x:" << this->area.GetPoints().at(i).x << "\n";
+                ss << "          y:" << this->area.GetPoints().at(i).y << "\n";
+                ss << "       }\n" ;
+            }
+            ss << "   }\n";
+            ss << "}\n";
+            
+            return ss.str();
+        }
+
 
     };
 

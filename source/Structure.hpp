@@ -45,13 +45,13 @@ namespace mas {
         std::string ToString()const{
             switch(this->structure_type){
                 case AGE:
-                    return "age structured model";
+                    return "Age Structured Model";
                 case LENGTH:
-                    return "length structured model";
+                    return "Size Structured Model";
                 case STAGE:
-                    return "stage structured model";
+                    return "Stage Structured Model";
                 default:
-                    return "model structure unknown";
+                    return "Model Structure Unknown";
             }
         }
     };

@@ -1,34 +1,35 @@
 {
     "name": "red_snapper_assesment",
+    "comment":"This is a comment about this model",
     "data": {
         "structure": "age",
         "years": 10,
         "seasons": 4,
         "ages": 9,
         "genders": 1,
-        "comment":"This is a comment about this model",
+        "comment":"This is a comment about the data",
         "area": {
             "name": "area 1",
             "polygon": {
                 "point": {
+                    "x": 0,
+                    "y": 0
+                },
+                "point": {
+                    "x": 0,
+                    "y": 20
+                },
+                "point": {
                     "x": 20,
                     "y": 20
                 },
                 "point": {
                     "x": 20,
-                    "y": 30
-                },
-                "point": {
-                    "x": 30,
-                    "y": 30
-                },
-                "point": {
-                    "x": 30,
-                    "y": 20
+                    "y": 0
                 }
             }
         },
-        "observation": {
+        "observations": {
             "fleet": {
                 "name": "fleet 1",
                 "selectivity": "hook",
