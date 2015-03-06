@@ -1,11 +1,11 @@
 {
-    "name": "red_snapper_assesment",
+    "name": "red_snapper_model",
     "comment":"This is a comment about this model",
     "data": {
         "structure": "age",
-        "years": 10,
-        "seasons": 4,
-        "ages": 9,
+        "years": 12,
+        "seasons": 0,
+        "ages": 7,
         "genders": 1,
         "comment":"This is a comment about the data",
         "area": {
@@ -34,15 +34,15 @@
                 "name": "fleet 1",
                 "selectivity": "hook",
                 "areas": "area 1, area 2",
-                "path": "catch_at_age1.dat",
-                "order": "numbers_at_age, effort"
+                "source": "data/fleet1.dat",
+                "order": "numbers_at_age,cpue"
             },
             "survey": {
                 "name": "survey 1",
                 "areas": "area 1",
                 "selectivity": "hook",
-                "path": "survey_catch_at_age1.dat",
-                "order": "numbers_at_age, effort"
+                "source": "data/survey1.dat",
+                "order": "numbers_at_age,cpue"
             }
         },
         "population": {

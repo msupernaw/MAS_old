@@ -43,9 +43,8 @@ namespace mas {
      */
     template<typename REAL_T, typename EVAL_T>
     class EvaluationObject: public Object{
-    protected:
         Information<REAL_T,EVAL_T>* info;
-        
+    public:
         Information<REAL_T, EVAL_T>* GetInfo() const {
             return info;
         }

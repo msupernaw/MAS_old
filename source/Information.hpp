@@ -17,6 +17,11 @@
 #include "Object.hpp"
 #include "Location.hpp"
 #include "Structure.hpp"
+#include "Fleet.hpp"
+#include "Survey.hpp"
+#include "Study.hpp"
+#include "IoStream.hpp"
+
 #include "support/rapidjson/include/rapidjson/document.h"
 namespace mas {
 
@@ -27,6 +32,7 @@ namespace mas {
     template<typename REAL_T, typename EVAL_T = REAL_T>
     class Information : public EvaluationObject<REAL_T, EVAL_T> {
         std::string model_type;
+        std::string name;
         Structure<REAL_T, EVAL_T> structure; //model structure,ie age-based, length-based, stage-based, etc
         // hold a list of estimable parameters for the population analysis
         std::vector<std::pair<EVAL_T*, int> > estimable_parameters;
@@ -47,7 +53,9 @@ namespace mas {
         uint32_t number_of_gender_groups;
         uint32_t number_of_studies;
 
-
+        std::vector<Fleet<REAL_T, EVAL_T> > fleets;
+        std::vector<Survey<REAL_T, EVAL_T> > surveys;
+        std::vector<Study<REAL_T, EVAL_T> > studies;
     public:
 
         Information() :
@@ -61,6 +69,46 @@ namespace mas {
         number_of_studies(0),
         number_of_surveys(0),
         number_of_years(0) {
+        }
+
+        uint32_t GetNumberOfAgeGroups() const {
+            return number_of_age_groups;
+        }
+
+        uint32_t GetNumberOfAreas() const {
+            return number_of_areas;
+        }
+
+        uint32_t GetNumberOfFleets() const {
+            return number_of_fleets;
+        }
+
+        uint32_t GetNumberOfGenderGroups() const {
+            return number_of_gender_groups;
+        }
+
+        uint32_t GetNumberOfSeasons() const {
+            return number_of_seasons;
+        }
+
+        uint32_t GetNumberOfSizeGroups() const {
+            return number_of_size_groups;
+        }
+
+        uint32_t GetNumberOfStageGroups() const {
+            return number_of_stage_groups;
+        }
+
+        uint32_t GetNumber_of_studies() const {
+            return number_of_studies;
+        }
+
+        uint32_t GetNumberOfSurveys() const {
+            return number_of_surveys;
+        }
+
+        uint32_t GetNumberOfYears() const {
+            return number_of_years;
         }
 
         /**
@@ -99,6 +147,10 @@ namespace mas {
             rapidjson::Document d;
             d.Parse<0>(ss.str().c_str());
             for (rapidjson::Value::ConstMemberIterator itr = d.MemberBegin(); itr != d.MemberEnd(); ++itr) {
+                if (std::string(itr->name.GetString()) == "name") {
+                    this->name = std::string(itr->value.GetString());
+                }
+                
                 if (std::string(itr->name.GetString()) == "data") {
                     HandleData(itr);
                 }
@@ -106,10 +158,12 @@ namespace mas {
                     this->model_comments.push_back(std::string(itr->value.GetString()));
                 }
             }
+            this->Prepare();
         }
 
         std::string ToString()const {
             std::stringstream ss;
+            ss<<"Model Name: "<<this->name<<"\n";
             ss << "Model Type: " << this->structure.ToString() << "\n";
             switch (this->structure.structure_type) {
 
@@ -141,16 +195,27 @@ namespace mas {
                 for (int i = 0; i < this->model_comments.size(); i++) {
                     ss << " -" << this->model_comments[i] << "\n";
                 }
-                ss<<"\n";
+                ss << "\n";
             }
-            
-             if (this->data_comments.size() > 0) {
+
+            if (this->data_comments.size() > 0) {
                 ss << "Data Comments:\n";
                 for (int i = 0; i < this->data_comments.size(); i++) {
                     ss << " -" << this->data_comments[i] << "\n";
                 }
-                ss<<"\n";
+                ss << "\n";
             }
+
+
+            for (int i = 0; i < fleets.size(); i++) {
+                ss << fleets[i].ToString() << "\n";
+            }
+
+            for (int i = 0; i < surveys.size(); i++) {
+                ss << surveys[i].ToString() << "\n";
+            }
+
+
             return ss.str();
         }
 
@@ -163,6 +228,16 @@ namespace mas {
         }
 
     private:
+
+        void Prepare() {
+            for (int i = 0; i < fleets.size(); i++) {
+                fleets[i].LoadData();
+            }
+
+            for (int i = 0; i < surveys.size(); i++) {
+                surveys[i].LoadData();
+            }
+        }
 
         void HandleData(const rapidjson::Value::ConstMemberIterator& itr) {
             for (rapidjson::Value::ConstMemberIterator ditr = itr->value.MemberBegin(); ditr != itr->value.MemberEnd(); ++ditr) {
@@ -308,10 +383,60 @@ namespace mas {
 
         void HandleFleet(const rapidjson::Value::ConstMemberIterator & itr) {
             this->number_of_fleets++;
+            Fleet<REAL_T, EVAL_T> fleet;
+            fleet.SetInfo(this);
+
+            for (rapidjson::Value::ConstMemberIterator ditr = itr->value.MemberBegin();
+                    ditr != itr->value.MemberEnd(); ++ditr) {
+
+                if (std::string(ditr->name.GetString()) == "name") {
+                    fleet.SetName(std::string(ditr->value.GetString()));
+                }
+
+                if (std::string(ditr->name.GetString()) == "source") {
+                    fleet.SetDataSource(std::string(ditr->value.GetString()));
+                }
+
+                if (std::string(ditr->name.GetString()) == "selectivity") {
+                    fleet.SetSelectivity(std::string(ditr->value.GetString()));
+                }
+
+                if (std::string(ditr->name.GetString()) == "order") {
+                    fleet.SetDataOrder(std::string(ditr->value.GetString()));
+                }
+
+            }
+
+            fleets.push_back(fleet);
         }
 
         void HandleSurvey(const rapidjson::Value::ConstMemberIterator & itr) {
             this->number_of_surveys++;
+            Survey<REAL_T, EVAL_T> survey;
+            survey.SetInfo(this);
+
+            for (rapidjson::Value::ConstMemberIterator ditr = itr->value.MemberBegin();
+                    ditr != itr->value.MemberEnd(); ++ditr) {
+
+                if (std::string(ditr->name.GetString()) == "name") {
+                    survey.SetName(std::string(ditr->value.GetString()));
+                }
+
+                if (std::string(ditr->name.GetString()) == "source") {
+                    survey.SetDataSource(std::string(ditr->value.GetString()));
+                }
+
+                if (std::string(ditr->name.GetString()) == "selectivity") {
+                    survey.SetSelectivity(std::string(ditr->value.GetString()));
+                }
+
+                if (std::string(ditr->name.GetString()) == "order") {
+                    survey.SetDataOrder(std::string(ditr->value.GetString()));
+                }
+
+            }
+
+            surveys.push_back(survey);
         }
 
         void HandleStudy(const rapidjson::Value::ConstMemberIterator & itr) {
@@ -319,7 +444,11 @@ namespace mas {
         }
 
         void HandlePopulationModel(const rapidjson::Value::ConstMemberIterator & itr) {
+            for (rapidjson::Value::ConstMemberIterator ditr = itr->value.MemberBegin();
+                    ditr != itr->value.MemberEnd(); ++ditr) {
 
+
+            }
         }
 
 
